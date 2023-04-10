@@ -1,6 +1,6 @@
 The output from running all code will appear in this folder.
  
 That will include:
-- the two blank data files
-- 2 graphs (your measurement vs. latitude & longitude)
-- 1 map (your measurements on a map)
+- a blank "data sheet" file
+- any graphs we make based on your measurements
+- the maps we make from our final class measurements
