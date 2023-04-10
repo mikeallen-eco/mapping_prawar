@@ -103,8 +103,8 @@ my_data_final <- my_data %>%
                        cat_num),
          num_syllables = "", 
          freq_range_mm = "",
-         two_khz_mm = "",
          duration_mm = "",
+         two_khz_mm = "",
          two_sec_mm = "",
          skip_notes = ""
 )
