@@ -65,7 +65,10 @@ my_data <- read.csv("my_data/prawar_class_data_2023.csv") %>%
          freq_range_khz = 2*freq_range_mm/two_khz_mm,
          duration_s = 2*duration_mm/two_sec_mm,
          trill_rate = num_syllables/duration_s,
-         grp = as.numeric(as.factor(group_members)))
+         grp = as.numeric(as.factor(group_members))) %>%
+  filter(duration_s < 10,
+         freq_range_khz < 10,
+         trill_rate < 30)
 
 # load the map of North America
 state_bounds <- readRDS("map_data/prawar_map.rds")
