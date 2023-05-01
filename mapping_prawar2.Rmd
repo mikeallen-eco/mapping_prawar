@@ -49,7 +49,23 @@ my_data <- read.csv("my_data/prawar_class_data_2023.csv") %>%
                               lon %in% -94:-97 ~ -96),
          grid = paste0(grid_lat, grid_lon)
                               ) %>%
-  select(-lat,-lon)
+  select(-lat,-lon) %>%
+  select(cat_num, grid_lat, grid_lon, grid, Latitude, Longitude, quality, link, 
+         num_syllables, freq_range_mm, duration_mm, two_khz_mm, two_sec_mm, 
+         skip_notes, group_letter, group_members) %>%
+  filter(!is.na(num_syllables),
+         num_syllables != "",
+         num_syllables != "n/a",
+         duration_mm != "") %>%
+  mutate(num_syllables = as.numeric(num_syllables),
+         freq_range_mm = as.numeric(freq_range_mm),
+         duration_mm = as.numeric(duration_mm),
+         two_khz_mm = as.numeric(two_khz_mm),
+         two_sec_mm = as.numeric(two_sec_mm),
+         freq_range_khz = 2*freq_range_mm/two_khz_mm,
+         duration_s = 2*duration_mm/two_sec_mm,
+         trill_rate = num_syllables/duration_s,
+         grp = as.numeric(as.factor(group_members)))
 
 # load the map of North America
 state_bounds <- readRDS("map_data/prawar_map.rds")
@@ -58,35 +74,114 @@ state_bounds <- readRDS("map_data/prawar_map.rds")
 QUESTION 5: How many rows and columns does it have?
 QUESTION 6: What is the average number of syllables? The min? The max?
 ```{r}
-# view the data base
+# view a snapshot of the data
+str(my_data)
+
+# view the whole data base
 View(my_data)
 
 # view the mean and quantiles of the syllable number data
 summary(my_data$num_syllables)
 
-# make a histogram of the syllable number data
+# make a histogram of the syllable number data - a lot of variation!
 hist(my_data$num_syllables)
+hist(my_data$duration_s)
+hist(my_data$freq_range_khz)
+hist(my_data$trill_rate) # do you see an outlier here?
 ```
+# Do you think there is a relationship between song duration and number of syllables?
+What do you think?
+```{r}
+
+# song duration vs. number of syllables
+my_data %>%
+ggplot(aes(x = num_syllables, y = duration_s)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "salmon") +
+  theme_bw()
+
+```
+
+# How about trill rate vs. number of syllables?
+Notice that I removed the extremely fast trill rate (60/s) as a probably error.
+```{r}
+
+my_data %>%
+  filter(trill_rate < 60) %>%
+ggplot(aes(y = trill_rate, x = num_syllables)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "salmon") +
+  theme_bw()
+
+```
+# Do you think there is a relationship between number of syllables and frequency range?
+What do you think?
+```{r}
+
+# number of syllables vs. frequency range
+my_data %>%
+ggplot(aes(x = num_syllables, y = freq_range_khz)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "salmon") +
+  theme_bw()
+
+```
+
+# Let's do some QC  plotting 
+to see if might have been systematic measuring errors by group
+```{r}
+
+my_data %>%
+  ggplot(aes(x = as.factor(grp), y = duration_s)) +
+  geom_boxplot()
+
+my_data %>%
+  ggplot(aes(x = as.factor(grp), y = freq_range_khz)) +
+  geom_boxplot()
+
+my_data %>%
+  ggplot(aes(x = as.factor(grp), y = num_syllables)) +
+  geom_boxplot()
+
+my_data %>%
+  ggplot(aes(x = as.factor(grp), y = trill_rate)) +
+  geom_boxplot()
+
+```
+
 # Summarize the data by grid cell
+Notice that I filter out a data point with an extremely high trill rate
 ```{r}
 # summaize data by grid cell
 sum_data <- my_data %>%
+  filter(trill_rate < 60) %>%
   group_by(grid, grid_lat, grid_lon) %>%
   summarize(num_syllables = mean(num_syllables),
-            freq_range_khz = mean(2*freq_range_mm/two_khz_mm),
-            duration_s = mean(2*duration_mm/two_sec_mm),
+            freq_range_khz = mean(freq_range_khz),
+            duration_s = mean(duration_s),
+            trill_rate = mean(trill_rate),
             n = length(grid_lat),
             .groups = "drop")
 
 View(sum_data)
 ```
+# Look at the averaged grid cell data in terms of song trait pairs & lattitude
+This can help us see geographic clusters. Do you see any?
+```{r}
+sum_data %>%
+  ggplot() +
+  geom_point(aes(x = num_syllables, y = trill_rate, 
+                 color = grid_lat), size = 4) +
+  scale_color_viridis() +
+  theme_bw()
+
+```
 
 # Make map of the mean syllables per song
-We exclude grid cells with fewer than 5 songs.
 QUESTION 7: Do you see any patterns in mean number of syllables?
 ```{r}
 sum_data %>%
-  filter(n >= 5) %>%
+  # filter(n >= 3) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           size = .25) +
@@ -103,11 +198,10 @@ ggsave("my_output/Fig1_mean_num_syllables.png",
        height = 5, width = 5, dpi = 400)
 ```
 # Make map of the mean frequency range per song
-We exclude grid cells with fewer than 5 songs.
 QUESTION 8: Do you see any patterns in mean frequency range?
 ```{r}
 sum_data %>%
-  filter(n >= 5) %>%
+  # filter(n >= 3) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           size = .25) +
@@ -123,11 +217,10 @@ ggsave("my_output/Fig2_mean_freq_range_khz.png",
        height = 5, width = 5, dpi = 400)
 ```
 # Make map of the mean song duration
-We exclude grid cells with fewer than 5 songs.
 QUESTION 10: Do you see any patterns in mean song duration?
 ```{r}
 sum_data %>%
-  filter(n >= 5) %>%
+  # filter(n >= 3) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           size = .25) +
@@ -143,8 +236,10 @@ ggsave("my_output/Fig3_mean_song_duration_s.png",
        height = 5, width = 5, dpi = 400)
 ```
 # Challenge: make a map of the mean trill rate (syllables / second)
-Copy / paste and modify the code in the previous chunk to make the 4th "challenge" map.
+Copy / paste and modify the code in the previous chunk to make the 4th "challenge" map. Save this as Fig. 4. Do you see any patterns in mean trill rate?
 ```{r}
 
 
 ```
+
+Go back to the "Mapping Warblers" GitHub page to finish up Phase 3. 
