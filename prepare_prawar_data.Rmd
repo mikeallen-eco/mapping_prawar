@@ -1,0 +1,125 @@
+---
+title: "The 'Mapping Warbler Song' Project"
+author: "Mike Allen"
+date: "April 2024"
+output: html_document
+---
+# Load libraries and read in your data file
+This code file is organized into discrete "chunks" each of which can be run by clicking its green arrow. Make sure there is only one csv file (a csv file of audio recordings downloaded from Macaulay Library) in the "prawar_data" folder. This code reads in the data, keeping only songs with a known location (latitude/longitude), from June or July, north of 20 degrees latitude, and east of -98 longitude.
+```{r}
+# load the function libraries called "dplyr", "ggplot2", and "sf"
+# note: this also installs them if they are not yet installed
+if (require("dplyr") == F) {
+  install.packages("dplyr")
+}
+if (require("ggplot2") == F) {
+  install.packages("ggplot2")
+}
+if (require("sf") == F) {
+  install.packages("sf")
+}
+
+library(dplyr)
+library(ggplot2)
+library(sf)
+
+# read in the data from your "prawar_data" folder
+# this selects just the data from the main part of their range
+      # with a quality rating of 3 or above
+      # and that occur in the months of June or July
+
+# get the name of the raw data file
+data_file <-
+  list.files("prawar_data")[grepl(list.files("prawar_data"),
+                                  pattern = ".csv")]
+
+# load and filter the raw data file
+my_data <- read.csv(paste0("prawar_data/", data_file)) %>%
+    filter(#Average.Community.Rating >= 3,
+           is.na(Latitude) != TRUE,
+           Latitude > 20,
+           Longitude > -98,
+           Month %in% c(6,7)) %>%
+    rename(cat_num = 1)
+
+# load the map of North America
+state_bounds <- readRDS("map_data/prawar_map.rds")
+```
+# Make a map of the raw data
+```{r}
+my_data %>%
+    ggplot() +
+  geom_sf(data = state_bounds, aes(), color = "gray",
+          size = .25) +
+  geom_point(aes(x = Longitude, y = Latitude), 
+                 size = 1,
+                 color = "firebrick", 
+            alpha = .5) +
+  theme_bw() + 
+  theme(text = element_text(size = 14)) +
+  labs(x = "", y = "")
+
+ggsave("prawar_data/prawar_song_locations.png", dpi = 400, height = 6, width = 6)
+```
+# calculate number of latitude bands your data spans
+```{r}
+# print how many latitude and longitude bands the dataset covers
+length(unique(floor(my_data$Latitude)))
+length(unique(floor(my_data$Longitude)))
+
+# print how many songs are in each latitude or longitude band
+table(floor(my_data$Latitude))
+table(floor(my_data$Longitude))
+
+#print how many song recordings are available for each state
+table(my_data$State)
+```
+# Create data files for data collection
+```{r}
+
+# make subsets
+subset <- list()
+subset[[1]] <- 1:100
+subset[[2]] <- 90:189
+subset[[3]] <- 180:279
+subset[[4]] <- 270:369
+subset[[5]] <- 360:459
+subset[[6]] <- 450:549
+subset[[7]] <- 540:639
+subset[[8]] <- 635:734
+subset[[9]] <- 730:829
+subset[[10]] <- 825:924
+
+
+for(i in 1:10){
+
+sample_nums <- subset[[i]]
+samples <- sample(1:nrow(my_data), size = nrow(my_data), replace = FALSE)[sample_nums]
+
+# create a randomized data set tt
+my_data_final <- my_data %>%
+  mutate(song_num = 1:nrow(my_data)) %>%
+  filter(song_num %in% samples) %>%
+  select(cat_num, Latitude, Longitude, 
+         quality = Average.Community.Rating) %>%
+  mutate(link = paste0("https://macaulaylibrary.org/asset/", 
+                       cat_num),
+         num_syllables = "", 
+         freq_range_mm = "",
+         middle_syl_height_mm = "",
+         duration_mm = "",
+         two_khz_mm = "",
+         two_sec_mm = "",
+         skip_notes = "",
+         group_letter = "",
+         group_members = ""
+)
+
+# write the final "blank" data files to csv files in the "my_output" folder
+
+write.csv(my_data_final, 
+          paste0("blank_data_files/group_", LETTERS[i], 
+                 "_data_file.csv"),
+          row.names = F)
+}
+```

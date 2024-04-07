@@ -1,5 +1,5 @@
 ---
-title: "The 'Mapping Warbler Song' Project - part 2"
+title: "The 'Mapping Warbler Song' Project"
 author: "Mike Allen"
 date: "April 2023"
 output: html_document
@@ -112,8 +112,23 @@ Notice that I removed the extremely fast trill rate (60/s) as a probably error.
 my_data %>%
   filter(trill_rate < 60) %>%
 ggplot(aes(y = trill_rate, x = num_syllables)) +
-  geom_point() +
+  scale_color_viridis() +
+  geom_point(size = 3, alpha = .5) +
   geom_smooth(method = "lm", color = "salmon") +
+  theme_bw()
+
+my_data %>%
+  filter(trill_rate < 60) %>%
+ggplot(aes(x = Latitude, y = trill_rate)) +
+  scale_color_viridis() +
+  geom_point(size = 3, alpha = .5) +
+  theme_bw()
+
+my_data %>%
+  filter(trill_rate < 60) %>%
+ggplot(aes(x = Latitude, y = num_syllables)) +
+  scale_color_viridis() +
+  geom_point(size = 3, alpha = .5) +
   theme_bw()
 
 ```
@@ -242,7 +257,21 @@ ggsave("my_output/Fig3_mean_song_duration_s.png",
 Copy / paste and modify the code in the previous chunk to make the 4th "challenge" map. Save this as Fig. 4. Do you see any patterns in mean trill rate?
 ```{r}
 
+sum_data %>%
+  # filter(n >= 3) %>%
+    ggplot() +
+  geom_sf(data = state_bounds, aes(), color = "gray",
+          size = .25) +
+  geom_tile(aes(x = grid_lon, y = grid_lat, fill = trill_rate), 
+                 size = 1) +
+  scale_fill_viridis(option = "inferno") +
+  theme_bw() + 
+  theme(text = element_text(size = 14)) +
+  labs(x = "", y = "", fill = "Mean\nrate\n(#/s)",
+       title = "Trill rate")
 
+ggsave("my_output/Fig4_mean_trill_rate.png", 
+       height = 5, width = 5, dpi = 400)
 ```
 
 Go back to the "Mapping Warblers" GitHub page to finish up Phase 3. 
