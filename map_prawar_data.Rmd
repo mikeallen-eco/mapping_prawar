@@ -27,12 +27,9 @@ library(ggplot2)
 library(sf)
 library(viridis)
 
-# create a "my_data" folder if none exists
-if(!dir.exists("my_data")){dir.create("my_data")}
-
 # read in the compiled class data that you put into your "my_data" folder
   # also add map 4x4 lat/lon "grid cell" information to the data
-my_data <- read.csv("my_data/prawar_class_data_2023.csv") %>%
+my_data <- read.csv("prawar_data/2023_class_data/prawar_class_data_2023.csv") %>%
   mutate(lat = trunc(Latitude), lon = trunc(Longitude)) %>%
   mutate(grid_lat = case_when(lat %in% 30:33 ~ 32,
                               lat %in% 34:37 ~ 36,
@@ -199,10 +196,10 @@ sum_data %>%
 QUESTION 7: Do you see any patterns in mean number of syllables?
 ```{r}
 sum_data %>%
-  # filter(n >= 3) %>%
+   filter(n >= 3) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
-          size = .25) +
+          linewidth = .25) +
   geom_tile(aes(x = grid_lon, y = grid_lat, fill = num_syllables), 
                  size = 1) +
   scale_fill_viridis(option = "inferno") +
@@ -210,7 +207,8 @@ sum_data %>%
   theme(text = element_text(size = 14)) +
   labs(x = "", y = "",
        fill = "Mean\nnumber",
-       title = "Number of syllables")
+       title = "Number of syllables") +
+  geom_point(aes(x = Longitude, y = Latitude), data = my_data, shape = "+", color = "gray")
 
 ggsave("my_output/Fig1_mean_num_syllables.png", 
        height = 5, width = 5, dpi = 400)
@@ -219,7 +217,7 @@ ggsave("my_output/Fig1_mean_num_syllables.png",
 QUESTION 8: Do you see any patterns in mean frequency range?
 ```{r}
 sum_data %>%
-  # filter(n >= 3) %>%
+  filter(n >= 3) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           size = .25) +
@@ -229,7 +227,8 @@ sum_data %>%
   theme_bw() + 
   theme(text = element_text(size = 14)) +
   labs(x = "", y = "", fill = "Mean\nrange\n(kHz)",
-       title = "Frequency range")
+       title = "Frequency range") +
+  geom_point(aes(x = Longitude, y = Latitude), data = my_data, shape = "+", color = "gray")
 
 ggsave("my_output/Fig2_mean_freq_range_khz.png", 
        height = 5, width = 5, dpi = 400)
