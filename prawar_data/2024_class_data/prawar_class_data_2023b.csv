@@ -1,0 +1,696 @@
+cat_num,Latitude,Longitude,quality,link,num_syllables,freq_range_mm,middle_syl_height_mm,duration_mm,two_khz_mm,two_sec_mm,skip_notes,group_letter,group_members
+61284231,36.19755,-84.2295,3,https://macaulaylibrary.org/asset/61284231,14,17,17,117,11,120,,K,Dana
+61272281,35.9568,-83.8485,4.67,https://macaulaylibrary.org/asset/61272281,19,16,16,129,11,120,,K,Dana
+61231861,30.88388,-90.7126,3.5,https://macaulaylibrary.org/asset/61231861,7,14,14,113,11,120,,K,Dana
+61141991,43.36001,-72.3684,3.5,https://macaulaylibrary.org/asset/61141991,8,12,12,53,11,120,,K,Dana
+61131921,38.10532,-87.4444,3,https://macaulaylibrary.org/asset/61131921,12,14,14,106,11,120,,K,Dana
+60938711,45.09433,-72.091,4,https://macaulaylibrary.org/asset/60938711,15,16,16,132,11,120,,K,Dana
+60886961,42.24001,-72.6513,4.5,https://macaulaylibrary.org/asset/60886961,19,11,11,91,11,120,,K,Dana
+60869801,45.09433,-72.091,4,https://macaulaylibrary.org/asset/60869801,10,9,9,123,11,120,,K,Dana
+60516251,40.0826,-76.8834,3.5,https://macaulaylibrary.org/asset/60516251,6,28,28,34,11,120,,K,Dana
+60401071,35.7277,-82.7045,3,https://macaulaylibrary.org/asset/60401071,14,4,4,126,11,120,,K,Dana
+60374151,42.4667,-87.8015,3.5,https://macaulaylibrary.org/asset/60374151,17,16,16,120,9,110,,K,Bryce
+60322471,37.15245,-75.9502,3.33,https://macaulaylibrary.org/asset/60322471,11,6,6,150,9,110,,K,Bryce
+60164091,45.09433,-72.091,3,https://macaulaylibrary.org/asset/60164091,7,6,6,138,9,110,,K,Bryce
+60151981,41.12496,-93.0777,4.67,https://macaulaylibrary.org/asset/60151981,11,25,25,84,9,110,,K,Bryce
+59956081,39.63807,-91.4417,3.33,https://macaulaylibrary.org/asset/59956081,7,13,13,94,9,110,,K,Bryce
+41905021,44.7074,-92.8238,3,https://macaulaylibrary.org/asset/41905021,19,18,18,100,9,110,,K,Bryce
+34902511,43.57546,-73.409,4.5,https://macaulaylibrary.org/asset/34902511,15,15,15,94,9,110,,K,Bryce
+213680,42.42813,-76.3359,4,https://macaulaylibrary.org/asset/213680,10,9,9,131,9,110,,K,Bryce
+139498,39.1145,-86.3978,3,https://macaulaylibrary.org/asset/139498,24,8,8,148,9,110,,K,Bryce
+31164951,41.42196,-72.8979,3,https://macaulaylibrary.org/asset/31164951,8,13,13,143,9,110,,K,Bryce
+457836081,41.6457021,-71.7574177,3,https://macaulaylibrary.org/asset/457836081,12,11,11,145,11,132,,M,Sophia
+457743571,42.326697,-85.3473759,3,https://macaulaylibrary.org/asset/457743571,10,10,10,90,12,132,,M,Sophia
+457735241,42.3090019,-72.4802412,3,https://macaulaylibrary.org/asset/457735241,8,13,13,95,11,132,,M,Sophia
+457634251,43.0310275,-89.4394713,3,https://macaulaylibrary.org/asset/457634251,NA,NA,NA,NA,NA,NA,too noisy,M,Sophia
+457420071,33.1479624,-83.7534984,4,https://macaulaylibrary.org/asset/457420071,6,8,8,97,12,132,,M,Sophia
+457002851,42.6066224,-78.6235191,5,https://macaulaylibrary.org/asset/457002851,NA,NA,NA,NA,NA,NA,"quiet, can't see any warbler",M,Sophia
+456955331,39.8151456,-79.5891023,4,https://macaulaylibrary.org/asset/456955331,13,13,13,14,12,132,,M,Sophia
+351587921,31.5442786,-89.029008,4,https://macaulaylibrary.org/asset/351587921,10,6,6,72,8,91,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+351331421,43.2801663,-81.8125892,4,https://macaulaylibrary.org/asset/351331421,14,6,6,80,8,91,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+351331411,43.2801663,-81.8125892,3,https://macaulaylibrary.org/asset/351331411,18,8,8,92,8,91,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+351203511,42.1869503,-73.5971375,3,https://macaulaylibrary.org/asset/351203511,16,9,9,111,8,91,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350919141,43.2801663,-81.8125892,3.5,https://macaulaylibrary.org/asset/350919141,13,10,10,72,8,91,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350825671,38.3640313,-84.7452323,3,https://macaulaylibrary.org/asset/350825671,16,8,8,103,8,91,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350784161,42.4680852,-71.1582396,3,https://macaulaylibrary.org/asset/350784161,15,10,10,94,8,91,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350755091,41.0319425,-74.7411292,3.5,https://macaulaylibrary.org/asset/350755091,28,10,10,130,8,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350659621,43.3940482,-70.6263399,4.5,https://macaulaylibrary.org/asset/350659621,20,10,10,120,8,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350620081,41.927895,-73.723911,3.5,https://macaulaylibrary.org/asset/350620081,17,12,12,110,8,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350616401,41.0617371,-77.9071884,3,https://macaulaylibrary.org/asset/350616401,28,20,20,108,8,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350616281,41.0617371,-77.9071884,3,https://macaulaylibrary.org/asset/350616281,25,18,18,185,8,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350558551,41.478683,-81.97718,3,https://macaulaylibrary.org/asset/350558551,31,8,8,74,8,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350516801,41.6822544,-71.2382505,3,https://macaulaylibrary.org/asset/350516801,28,28,28,105,8,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350512771,41.1467412,-79.4988137,4,https://macaulaylibrary.org/asset/350512771,24,22,22,112,8,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350496691,38.181886,-77.517042,3,https://macaulaylibrary.org/asset/350496691,22,7,7,86,8,93,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350439711,41.478746,-81.979261,3.5,https://macaulaylibrary.org/asset/350439711,15,8,8,85,8,93,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350430891,41.4780938,-81.9772331,4.5,https://macaulaylibrary.org/asset/350430891,15,8,8,74,8,93,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350383031,41.4700009,-73.25881,3,https://macaulaylibrary.org/asset/350383031,26,8,8,120,8,93,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+350377941,41.398118,-70.704297,5,https://macaulaylibrary.org/asset/350377941,12,5,5,73,8,93,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349989691,43.2666087,-76.3654238,3,https://macaulaylibrary.org/asset/349989691,12,7,7,73,8,93,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349984501,44.139204,-70.487797,4,https://macaulaylibrary.org/asset/349984501,14,8,8,103,8,93,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349983601,40.5926379,-91.7136423,3,https://macaulaylibrary.org/asset/349983601,9,5,5,84,8,93,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349820501,39.793538,-74.275055,3,https://macaulaylibrary.org/asset/349820501,10,9,9,130,10,120,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349804411,41.6349968,-70.3534057,3,https://macaulaylibrary.org/asset/349804411,12,11,11,105,10,120,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349781761,36.442576,-79.795751,3,https://macaulaylibrary.org/asset/349781761,24,11,11,115,10,120,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349781461,36.442576,-79.795751,3,https://macaulaylibrary.org/asset/349781461,13,8,8,200,10,120,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349678691,35.8720815,-86.4342499,5,https://macaulaylibrary.org/asset/349678691,16,9,9,120,10,120,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349575261,38.8949742,-92.210784,3.5,https://macaulaylibrary.org/asset/349575261,20,11,11,120,10,120,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349425151,43.40066,-70.62553,3.5,https://macaulaylibrary.org/asset/349425151,12,10,10,120,10,120,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349383191,44.0304348,-73.4355471,4,https://macaulaylibrary.org/asset/349383191,8,8,8,,10,120,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349260191,41.7781927,-70.500555,4,https://macaulaylibrary.org/asset/349260191,13,8,8,105,9,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349177171,44.7711808,-67.9966281,3,https://macaulaylibrary.org/asset/349177171,19,9,9,95,9,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349158241,41.0319425,-74.7411292,3,https://macaulaylibrary.org/asset/349158241,12,6,6,75,9,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349158251,41.0319425,-74.7411292,4,https://macaulaylibrary.org/asset/349158251,12,6,6,75,9,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+349158231,41.0319425,-74.7411292,4,https://macaulaylibrary.org/asset/349158231,11,6.5,6.5,70,9,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+348818271,43.8512527,-73.1217867,4,https://macaulaylibrary.org/asset/348818271,13,5,5,130,9,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+348815011,32.548375,-89.934649,3,https://macaulaylibrary.org/asset/348815011,11,5,5,94,9,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+348736341,38.1079022,-87.4288774,5,https://macaulaylibrary.org/asset/348736341,14,7,7,80,9,100,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+348697811,40.2469466,-75.7919732,4,https://macaulaylibrary.org/asset/348697811,16,13,13,127,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+348311121,41.7315289,-73.5626101,4.5,https://macaulaylibrary.org/asset/348311121,12,15,15,137,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+348180721,39.7633333,-74.1058333,3,https://macaulaylibrary.org/asset/348180721,14,13,13,80,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+347539401,40.321791,-75.4144164,3,https://macaulaylibrary.org/asset/347539401,14,13,13,114,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+347509341,42.3483635,-76.1646831,4.5,https://macaulaylibrary.org/asset/347509341,13,11,11,152,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+347506751,39.9479768,-75.4458618,4,https://macaulaylibrary.org/asset/347506751,12,14,14,119,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+347445241,38.748396,-83.4636,3,https://macaulaylibrary.org/asset/347445241,11,7,7,106,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+347434931,44.5681222,-77.0958281,3,https://macaulaylibrary.org/asset/347434931,22,15,15,127,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+347425421,44.478032,-70.327741,4,https://macaulaylibrary.org/asset/347425421,7,13,13,93,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+347423411,44.353681,-70.324044,4.5,https://macaulaylibrary.org/asset/347423411,12,11,11,90,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+347064881,44.899371,-86.0208678,4.5,https://macaulaylibrary.org/asset/347064881,8,12,12,88,12,114,,D,"Sam, Alyssa, Fern, Kelly, April, Sophia"
+461926531,41.6348031,-70.5607738,5,https://macaulaylibrary.org/asset/461926531,14,18,18,105,11,124,,B,"Camille, Jessica "
+461876401,41.3099535,-88.9663839,3,https://macaulaylibrary.org/asset/461876401,14,15,15,103,11,124,,B,"Camille, Jessica "
+461861471,35.7082085,-87.2172761,4,https://macaulaylibrary.org/asset/461861471,7,13,13,93,11,124,,B,"Camille, Jessica "
+461762451,41.6588008,-87.922318,3,https://macaulaylibrary.org/asset/461762451,12,12,12,96,11,124,,B,"Camille, Jessica "
+461716101,41.3637344,-71.6699166,4,https://macaulaylibrary.org/asset/461716101,12,20,20,114,11,124,,B,"Camille, Jessica "
+461508141,39.4385815,-76.2213028,3,https://macaulaylibrary.org/asset/461508141,16,18,18,122,11,124,,B,"Camille, Jessica "
+461326521,42.465908,-78.56396,4,https://macaulaylibrary.org/asset/461326521,13,13,13,115,11,124,,B,"Camille, Jessica "
+461289781,38.82111,-77.54685,5,https://macaulaylibrary.org/asset/461289781,12,14,14,152,11,124,,B,"Camille, Jessica "
+461249681,44.5434447,-70.1625123,5,https://macaulaylibrary.org/asset/461249681,16,15,15,121,11,124,,B,"Camille, Jessica "
+461235921,36.5450197,-83.4642136,5,https://macaulaylibrary.org/asset/461235921,17,19,19,142,11,124,,B,"Camille, Jessica "
+461094651,41.730314,-70.2350271,4,https://macaulaylibrary.org/asset/461094651,18,14,14,114,11,124,,B,"Camille, Jessica "
+460916251,30.4112233,-95.2856983,5,https://macaulaylibrary.org/asset/460916251,5,7,7,100,11,124,,B,"Camille, Jessica "
+460896521,42.4925576,-71.0465018,4,https://macaulaylibrary.org/asset/460896521,17,15,15,175,11,124,,B,"Camille, Jessica "
+460842761,45.0020692,-79.9714994,4,https://macaulaylibrary.org/asset/460842761,15,17,17,116,11,124,,B,"Camille, Jessica "
+460802791,41.8633019,-73.987365,3,https://macaulaylibrary.org/asset/460802791,13,14,14,110,11,124,,B,"Camille, Jessica "
+460644371,40.463366,-89.788052,5,https://macaulaylibrary.org/asset/460644371,NA,NA,NA,NA,NA,NA,"Song unclear, overlayed with other bird songs",B,"Camille, Jessica "
+460542361,44.127811,-89.876929,5,https://macaulaylibrary.org/asset/460542361,11,20,20,112,11,124,,B,"Camille, Jessica "
+460531371,40.4693518,-75.2248746,4,https://macaulaylibrary.org/asset/460531371,10,14,14,101,11,124,,B,"Camille, Jessica "
+459596501,34.7661532,-76.9556236,3,https://macaulaylibrary.org/asset/459596501,16,15,15,123,11,124,,B,"Camille, Jessica "
+459415651,43.2801663,-81.8125892,5,https://macaulaylibrary.org/asset/459415651,15,13,13,99,11,124,,B,"Camille, Jessica "
+459412131,40.448641,-80.318434,3,https://macaulaylibrary.org/asset/459412131,13,12,12,65,11,124,,B,"Camille, Jessica "
+459396691,42.4485888,-73.8923353,5,https://macaulaylibrary.org/asset/459396691,16,23,23,115,11,124,,B,"Camille, Jessica "
+459321721,43.1340968,-85.193574,5,https://macaulaylibrary.org/asset/459321721,13,16,16,107,11,124,,B,"Camille, Jessica "
+459252051,43.134101,-85.19332,4,https://macaulaylibrary.org/asset/459252051,14,16,16,111,11,124,,B,"Camille, Jessica "
+459173361,43.1349828,-85.1930872,5,https://macaulaylibrary.org/asset/459173361,13,15,15,111,11,124,,B,"Camille, Jessica "
+459126701,44.5201817,-76.2897943,3,https://macaulaylibrary.org/asset/459126701,7,11,11,75,11,124,,B,"Camille, Jessica "
+459003421,32.763541,-94.477647,4,https://macaulaylibrary.org/asset/459003421,8,9,9,149,11,124,,B,"Camille, Jessica "
+459003271,32.763541,-94.477647,3,https://macaulaylibrary.org/asset/459003271,8,10,10,123,11,124,,B,"Camille, Jessica "
+458993391,41.1772327,-73.6762905,5,https://macaulaylibrary.org/asset/458993391,12,11,11,92,11,124,,B,"Camille, Jessica "
+458933761,42.9396281,-87.8456685,3,https://macaulaylibrary.org/asset/458933761,10,9,9,75,11,124,,B,"Camille, Jessica "
+458923271,41.7765606,-93.4040022,3,https://macaulaylibrary.org/asset/458923271,18,9,9,137,11,124,,B,"Camille, Jessica "
+458814961,40.0957357,-75.6000137,4,https://macaulaylibrary.org/asset/458814961,11,15,15,136,11,124,,B,"Camille, Jessica "
+458624411,44.219258,-69.94786,3,https://macaulaylibrary.org/asset/458624411,8,10,10,168,11,124,,B,"Camille, Jessica "
+458546911,41.9968637,-72.4012631,4,https://macaulaylibrary.org/asset/458546911,14,16,16,130,11,124,,B,"Camille, Jessica "
+458459241,43.8313207,-73.406589,4,https://macaulaylibrary.org/asset/458459241,20,15,15,98,11,124,,B,"Camille, Jessica "
+458459091,43.842692,-73.415286,3,https://macaulaylibrary.org/asset/458459091,12,12,12,104,11,124,,B,"Camille, Jessica "
+458453311,41.4319095,-72.2873071,3,https://macaulaylibrary.org/asset/458453311,15,13,13,120,11,124,,B,"Camille, Jessica "
+457964911,42.4667,-87.8015,4,https://macaulaylibrary.org/asset/457964911,11,11,11,101,11,124,,B,"Camille, Jessica "
+457959291,41.0319425,-74.7411292,5,https://macaulaylibrary.org/asset/457959291,10,15,15,89,11,124,,B,"Camille, Jessica "
+457959261,41.0319425,-74.7411292,3,https://macaulaylibrary.org/asset/457959261,11,13,13,104,11,124,,B,"Camille, Jessica "
+457959251,41.0319425,-74.7411292,4,https://macaulaylibrary.org/asset/457959251,9,10,10,93,11,124,,B,"Camille, Jessica "
+457838351,42.5788068,-86.0159092,3,https://macaulaylibrary.org/asset/457838351,NA,NA,NA,NA,NA,NA,Sonogram not clear,B,"Camille, Jessica "
+457836391,41.6457021,-71.7574177,5,https://macaulaylibrary.org/asset/457836391,11,11,11,128,11,124,,B,"Camille, Jessica "
+457836081,41.6457021,-71.7574177,3,https://macaulaylibrary.org/asset/457836081,13,14,14,146,11,124,,B,"Camille, Jessica "
+457743571,42.326697,-85.3473759,3,https://macaulaylibrary.org/asset/457743571,11,11,11,83,11,124,,B,"Camille, Jessica "
+457735241,42.3090019,-72.4802412,3,https://macaulaylibrary.org/asset/457735241,8,16,16,82,11,124,,B,"Camille, Jessica "
+457634251,43.0310275,-89.4394713,3,https://macaulaylibrary.org/asset/457634251,10,10,10,110,11,124,,B,"Camille, Jessica "
+457420071,33.1479624,-83.7534984,4,https://macaulaylibrary.org/asset/457420071,6,17,17,90,11,124,,B,"Camille, Jessica "
+457002851,42.6066224,-78.6235191,5,https://macaulaylibrary.org/asset/457002851,NA,NA,NA,NA,NA,NA,Sonogram not clear,B,"Camille, Jessica "
+456955331,39.8151456,-79.5891023,4,https://macaulaylibrary.org/asset/456955331,10,14,14,73,11,124,,B,"Camille, Jessica "
+346955501,40.47087,-74.5229955,3.5,https://macaulaylibrary.org/asset/346955501,13,5,5,78,9,95,,E,
+346755291,38.661,-90.758,4,https://macaulaylibrary.org/asset/346755291,8,4.5,4.5,88,9,95,,E,
+346726361,38.70854,-90.75994,3,https://macaulaylibrary.org/asset/346726361,11,9,9,95,9,95,,E,
+346677751,42.2708944,-71.2524748,4.33,https://macaulaylibrary.org/asset/346677751,11,7,7,75,9,95,,E,
+346548581,41.288315,-70.005137,3,https://macaulaylibrary.org/asset/346548581,15,7,7,80,9,95,,E,
+346446391,42.7466592,-71.7079653,4,https://macaulaylibrary.org/asset/346446391,14,9,9,105,9,95,,E,
+346440421,44.7258086,-86.111324,3,https://macaulaylibrary.org/asset/346440421,11,5,5,58,9,95,,E,
+346325651,42.0212167,-70.8722806,4,https://macaulaylibrary.org/asset/346325651,6,6,6,55,9,95,,E,
+345988191,44.4977733,-68.9639614,3.5,https://macaulaylibrary.org/asset/345988191,10,8,8,85,9,95,,E,
+345875671,44.89209,-86.0562086,3,https://macaulaylibrary.org/asset/345875671,6,4.5,4.5,55,9,95,,E,
+345809461,35.7648102,-86.2915931,4,https://macaulaylibrary.org/asset/345809461,11,5,5,75,9,95,,E,
+345755321,41.4319095,-72.2873071,3,https://macaulaylibrary.org/asset/345755321,8,3,3,45,9,95,,E,
+345745761,41.4438793,-73.8607155,3.5,https://macaulaylibrary.org/asset/345745761,13,15,15,55,8.5,97,,E,
+345745741,41.4438793,-73.8607155,3,https://macaulaylibrary.org/asset/345745741,9,13,13,98,8.5,97,,E,
+345730991,33.9183983,-88.9038724,4.5,https://macaulaylibrary.org/asset/345730991,9,3,3,110,8.5,97,,E,
+345673011,41.0290844,-72.1875189,3,https://macaulaylibrary.org/asset/345673011,12,20,20,117,8.5,97,,E,
+345660701,41.4319095,-72.2873071,4.5,https://macaulaylibrary.org/asset/345660701,13,16,16,90,8.5,97,,E,
+345470201,44.823,-87.315506,3.5,https://macaulaylibrary.org/asset/345470201,14,17,17,84,8.5,97,,E,
+345470191,44.823,-87.315506,3,https://macaulaylibrary.org/asset/345470191,17,16,16,145,8.5,97,,E,
+345437001,39.4178615,-77.2069788,4.5,https://macaulaylibrary.org/asset/345437001,16,17,17,109,8.5,97,,E,
+345408861,42.326697,-85.3473759,3,https://macaulaylibrary.org/asset/345408861,8,12,12,68,8.5,97,,E,
+345167731,44.5590717,-77.1170926,4,https://macaulaylibrary.org/asset/345167731,11,16,16,99,8.5,97,,E,
+344868191,42.3483635,-76.1646831,3,https://macaulaylibrary.org/asset/344868191,19,19,19,121,8.5,97,,E,
+344567481,44.823,-87.315506,3,https://macaulaylibrary.org/asset/344567481,13,19,19,88,8.5,97,,E,
+344498951,43.2081475,-71.4938092,3,https://macaulaylibrary.org/asset/344498951,5,5,5,90,180,95,,E,
+344390191,42.326697,-85.3473759,3,https://macaulaylibrary.org/asset/344390191,10,16,16,48,180,95,,E,
+344295491,44.138072,-70.450422,3,https://macaulaylibrary.org/asset/344295491,10,15,15,90,180,95,,E,
+340882871,43.25471,-81.83647,4,https://macaulaylibrary.org/asset/340882871,21,24,24,150,180,95,,E,
+338192851,34.9951463,-82.4032009,4,https://macaulaylibrary.org/asset/338192851,26,10,10,105,180,95,,E,
+321903891,42.2831722,-76.6559494,3,https://macaulaylibrary.org/asset/321903891,9,9,9,76,180,95,,E,
+320396811,43.508689,-91.3480461,3,https://macaulaylibrary.org/asset/320396811,13,16,16,67,180,95,,E,
+290696671,41.9303792,-88.4138918,4.86,https://macaulaylibrary.org/asset/290696671,18,20,20,110,180,95,,E,
+286857651,43.508689,-91.3480461,3.5,https://macaulaylibrary.org/asset/286857651,15,5,5,90,180,95,,E,
+285513361,43.028053,-89.832572,3.5,https://macaulaylibrary.org/asset/285513361,10,7,7,90,180,95,,E,
+278496301,42.7182439,-71.4009941,3,https://macaulaylibrary.org/asset/278496301,4,14,14,80,180,95,,E,
+265271841,41.6066506,-70.5907631,4,https://macaulaylibrary.org/asset/265271841,10,5,5,75,180,95,,E,
+265269951,41.542976,-70.62774,3,https://macaulaylibrary.org/asset/265269951,10,8,8,67,180,95,,E,
+258529201,41.89129,-88.22697,4,https://macaulaylibrary.org/asset/258529201,8,9,9,123,190,130,,E,
+256783821,41.21491,-77.294653,5,https://macaulaylibrary.org/asset/256783821,11,11,11,104,190,130,,E,
+251149471,42.3101677,-76.5216895,5,https://macaulaylibrary.org/asset/251149471,19,35,35,116,190,130,,E,
+251148521,42.3101677,-76.5216895,4,https://macaulaylibrary.org/asset/251148521,19,26,26,113,190,130,,E,
+251148431,42.3101677,-76.5216895,4,https://macaulaylibrary.org/asset/251148431,10,6,6,155,190,130,,E,
+250167351,39.709226,-78.198798,3,https://macaulaylibrary.org/asset/250167351,22,13,13,150,190,130,,E,
+250166961,39.709226,-78.198798,3,https://macaulaylibrary.org/asset/250166961,20,15,15,157,190,130,,E,
+249903401,38.1685,-77.189,3,https://macaulaylibrary.org/asset/249903401,15,6,6,161,190,130,,E,
+249903251,38.1685,-77.189,3,https://macaulaylibrary.org/asset/249903251,9,18,18,164,190,130,,E,
+249556361,43.223801,-70.6914961,3,https://macaulaylibrary.org/asset/249556361,7,9,9,122,190,130,,E,
+249166641,36.4876667,-87.0011862,3,https://macaulaylibrary.org/asset/249166641,13,8,8,85,190,130,,E,
+248803581,39.15126,-86.39579,3,https://macaulaylibrary.org/asset/248803581,7,5,5,80,190,130,,E,
+248643851,44.82732,-79.672107,4,https://macaulaylibrary.org/asset/248643851,11,3,3,125,190,130,,E,
+461926531,41.6348,-70.5608,5,https://macaulaylibrary.org/asset/461926531,,,,,,,N/A,M,Miguel
+461876401,41.30995,-88.9664,3,https://macaulaylibrary.org/asset/461876401,,,,,,,N/A,M,Miguel
+461861471,35.70821,-87.2173,4,https://macaulaylibrary.org/asset/461861471,7,5,5,60,7,80,,M,Miguel
+461762451,41.6588,-87.9223,3,https://macaulaylibrary.org/asset/461762451,12,7,7,61,7,80,,M,Miguel
+461716101,41.36373,-71.6699,4,https://macaulaylibrary.org/asset/461716101,12,7,7,68,7,80,,M,Miguel
+461508141,39.43858,-76.2213,3,https://macaulaylibrary.org/asset/461508141,15,9,9,85,7,80,,M,Miguel
+461326521,42.46591,-78.564,4,https://macaulaylibrary.org/asset/461326521,13,7,7,75,7,80,,M,Miguel
+461289781,38.82111,-77.5469,5,https://macaulaylibrary.org/asset/461289781,12,7,7,100,7,80,,M,Miguel
+461249681,44.54344,-70.1625,5,https://macaulaylibrary.org/asset/461249681,14,9,9,78,7,80,,M,Miguel
+461235921,36.54502,-83.4642,5,https://macaulaylibrary.org/asset/461235921,16,7,7,78,7,80,,M,Miguel
+459396691,42.4485888,-73.8923353,5,https://macaulaylibrary.org/asset/459396691,16,9,9,108,10,120,,M,Zahra
+459321721,43.1340968,-85.193574,5,https://macaulaylibrary.org/asset/459321721,13,19,19,110,10,120,,M,Zahra
+459252051,43.134101,-85.19332,4,https://macaulaylibrary.org/asset/459252051,14,18,18,115,10,120,,M,Zahra
+459173361,43.1349828,-85.1930872,5,https://macaulaylibrary.org/asset/459173361,13,18,18,110,10,120,,M,Zahra
+459126701,44.5201817,-76.2897943,3,https://macaulaylibrary.org/asset/459126701,NA,NA,NA,NA,NA,NA,The song is not recorded clearly so the measurements will not be accurate. ,M,Zahra
+459003421,32.763541,-94.477647,4,https://macaulaylibrary.org/asset/459003421,8,11,11,152,10,120,,M,Zahra
+459003271,32.763541,-94.477647,3,https://macaulaylibrary.org/asset/459003271,10,7,7,135,10,120,,M,Zahra
+458993391,41.1772327,-73.6762905,5,https://macaulaylibrary.org/asset/458993391,10,12,12,103,10,120,,M,Zahra
+458933761,42.9396281,-87.8456685,3,https://macaulaylibrary.org/asset/458933761,12,16,16,103,10,120,,M,Zahra
+458923271,41.7765606,-93.4040022,3,https://macaulaylibrary.org/asset/458923271,12,11,11,150,10,120,,M,Zahra
+458814961,40.0957357,-75.6000137,4,https://macaulaylibrary.org/asset/458814961,11,16,16,147,10,120,,M,Zahra
+458814961,40.0957357,-75.6000137,4,https://macaulaylibrary.org/asset/458814961,11,5,5,100,8,96,,M,Alfredo
+458624411,44.219258,-69.94786,3,https://macaulaylibrary.org/asset/458624411,8,8,8,130,8,96,,M,Alfredo
+458546911,41.9968637,-72.4012631,4,https://macaulaylibrary.org/asset/458546911,14,10,10,115,8,96,,M,Alfredo
+458459241,43.8313207,-73.406589,4,https://macaulaylibrary.org/asset/458459241,19,8,8,77,8,96,,M,Alfredo
+458459091,43.842692,-73.415286,3,https://macaulaylibrary.org/asset/458459091,11,8,8,78,8,96,,M,Alfredo
+458453311,41.4319095,-72.2873071,3,https://macaulaylibrary.org/asset/458453311,13,9,9,80,8,96,,M,Alfredo
+457964911,42.4667,-87.8015,4,https://macaulaylibrary.org/asset/457964911,10,7,7,74,8,96,,M,Alfredo
+457959291,41.0319425,-74.7411292,5,https://macaulaylibrary.org/asset/457959291,9,10,10,65,8,96,,M,Alfredo
+457959261,41.0319425,-74.7411292,3,https://macaulaylibrary.org/asset/457959261,13,8,8,80,8,96,,M,Alfredo
+457959251,41.0319425,-74.7411292,4,https://macaulaylibrary.org/asset/457959251,9,10,10,57,8,26,,M,Alfredo
+457838351,42.5788068,-86.0159092,3,https://macaulaylibrary.org/asset/457838351,10,11,11,60,8,26,,M,Alfredo
+457836391,41.6457021,-71.7574177,5,https://macaulaylibrary.org/asset/457836391,10,11,11,95,8,26,,M,Alfredo
+170120571,43.51102,-91.3499,3.5,https://macaulaylibrary.org/asset/170120571,15,8,8,112,12,132,,I,Chris
+169514491,42.3267,-85.3474,4.5,https://macaulaylibrary.org/asset/169514491,NA,NA,NA,NA,NA,NA,MisID,I,Chris
+169419281,44.94689,-85.8115,4.5,https://macaulaylibrary.org/asset/169419281,17,12,12,135,12,132,,I,Chris
+169416831,43.57546,-73.409,3,https://macaulaylibrary.org/asset/169416831,18,10,10,120,12,132,,I,Chris
+168853931,41.44342,-73.9735,3,https://macaulaylibrary.org/asset/168853931,20,12,12,133,12,132,,I,Chris
+167619271,39.81434,-83.9908,4,https://macaulaylibrary.org/asset/167619271,20,7,7,164,12,132,,I,Chris
+167475931,38.15079,-77.3384,3.5,https://macaulaylibrary.org/asset/167475931,21,7,7,121,12,132,,I,Chris
+167342251,37.89621,-89.6367,3,https://macaulaylibrary.org/asset/167342251,19,6,6,131,12,132,,I,Chris
+167245511,40.44864,-80.3184,3.5,https://macaulaylibrary.org/asset/167245511,18,8,8,108,12,132,,I,Chris
+167128111,41.36211,-70.7555,4.5,https://macaulaylibrary.org/asset/167128111,21,11,11,110,12,132,,I,Chris
+167128051,41.36211,-70.7555,3,https://macaulaylibrary.org/asset/167128051,NA,NA,NA,NA,NA,NA,MisID,I,Chris
+167046681,35.02318,-89.285,3,https://macaulaylibrary.org/asset/167046681,18,11,11,148,12,132,,I,Chris
+166873321,42.48339,-71.028,3,https://macaulaylibrary.org/asset/166873321,21,8,8,85,12,132,,I,Chris
+166719201,43.25471,-81.8365,3,https://macaulaylibrary.org/asset/166719201,23,11,11,171,12,132,,I,Chris
+166685091,40.56936,-91.6582,4,https://macaulaylibrary.org/asset/166685091,21,8,8,140,12,132,,I,Chris
+166385331,36.08151,-86.3901,3,https://macaulaylibrary.org/asset/166385331,13,14,14,130,12,132,,I,Chris
+166383781,36.08151,-86.3901,4.75,https://macaulaylibrary.org/asset/166383781,11,13,13,121,12,132,,I,Chris
+166226601,37.87717,-87.4795,3,https://macaulaylibrary.org/asset/166226601,17,8,8,146,12,132,,I,Chris
+165972761,41.83377,-70.6532,4.5,https://macaulaylibrary.org/asset/165972761,22,8,8,106,12,132,,I,Chris
+165972751,41.83377,-70.6532,3,https://macaulaylibrary.org/asset/165972751,27,11,11,127,12,132,,I,Chris
+165799081,43.25471,-81.8365,4,https://macaulaylibrary.org/asset/165799081,19,11,11,157,12,132,,I,Chris
+165583621,41.88253,-69.9957,4.5,https://macaulaylibrary.org/asset/165583621,17,13,13,119,12,132,,I,Chris
+165382501,42.3267,-85.3474,4.5,https://macaulaylibrary.org/asset/165382501,21,6,6,140,12,132,,I,Chris
+165340741,43.28017,-81.8126,4,https://macaulaylibrary.org/asset/165340741,17,11,11,133,12,132,,I,Chris
+165340281,43.28017,-81.8126,4,https://macaulaylibrary.org/asset/165340281,12,15,15,108,12,132,,I,Chris
+165267211,39.07788,-76.7714,3.5,https://macaulaylibrary.org/asset/165267211,NA,NA,NA,NA,NA,NA,Too faint,I,Chris
+165199691,43.28362,-81.8015,3.5,https://macaulaylibrary.org/asset/165199691,21,11,11,169,12,132,,I,Chris
+165176091,35.6063,-84.115,3,https://macaulaylibrary.org/asset/165176091,20,12,12,127,12,132,,I,Chris
+165062691,43.50869,-91.348,3,https://macaulaylibrary.org/asset/165062691,14,6,6,112,12,132,,I,Chris
+165062681,43.50869,-91.348,3,https://macaulaylibrary.org/asset/165062681,14,10,10,116,12,132,,I,Chris
+164964751,41.11317,-75.7244,3,https://macaulaylibrary.org/asset/164964751,17,13,13,129,12,132,,I,Chris
+164919811,44.32751,-69.4289,3.5,https://macaulaylibrary.org/asset/164919811,17,12,12,125,12,132,,I,Chris
+164896231,42.47165,-71.3062,3.5,https://macaulaylibrary.org/asset/164896231,21,10,10,161,12,132,,I,Chris
+164826471,42.29186,-76.6576,4,https://macaulaylibrary.org/asset/164826471,23,14,14,155,12,132,,I,Chris
+164618661,41.64307,-87.0623,4.33,https://macaulaylibrary.org/asset/164618661,17,12,12,123,12,132,,I,Chris
+164610321,37.11878,-84.3479,4,https://macaulaylibrary.org/asset/164610321,16,10,10,142,12,132,,I,Chris
+164439851,41.00205,-72.0774,5,https://macaulaylibrary.org/asset/164439851,19,11,11,119,12,132,,I,Chris
+164402451,44.55463,-73.1198,3.5,https://macaulaylibrary.org/asset/164402451,21,14,14,131,12,132,,I,Chris
+164322371,43.28017,-81.8126,4,https://macaulaylibrary.org/asset/164322371,20,8,8,119,12,132,,I,Chris
+164286821,38.10311,-86.9984,4,https://macaulaylibrary.org/asset/164286821,23,7,7,116,12,132,,I,Chris
+164286711,38.10311,-86.9984,3,https://macaulaylibrary.org/asset/164286711,18,12,12,129,12,132,,I,Chris
+164286051,42.29305,-76.6551,3.5,https://macaulaylibrary.org/asset/164286051,22,11,11,114,12,132,,I,Chris
+164286041,42.29305,-76.6551,3,https://macaulaylibrary.org/asset/164286041,19,13,13,108,12,132,,I,Chris
+164278721,42.29186,-76.6576,3,https://macaulaylibrary.org/asset/164278721,17,12,12,129,12,132,,I,Chris
+164278691,42.29186,-76.6576,4,https://macaulaylibrary.org/asset/164278691,18,13,13,161,12,132,,I,Chris
+164185971,42.29186,-76.6576,3,https://macaulaylibrary.org/asset/164185971,21,15,15,152,12,132,,I,Chris
+164089981,42.29305,-76.6551,3,https://macaulaylibrary.org/asset/164089981,23,10,10,119,12,132,,I,Chris
+164071481,42.29305,-76.6551,3,https://macaulaylibrary.org/asset/164071481,14,12,12,121,12,132,,I,Chris
+164071381,42.29305,-76.6551,4,https://macaulaylibrary.org/asset/164071381,17,11,11,129,12,132,,I,Chris
+164071311,42.29305,-76.6551,3.5,https://macaulaylibrary.org/asset/164071311,21,13,13,119,12,132,,I,Chris
+464575711,41.7939856,-71.0306534,3,https://macaulaylibrary.org/asset/464575711,NA,NA,NA,NA,NA,NA,skip,A,"charlie, jin, matt, theresa"
+464542001,44.5336939,-70.1655915,5,https://macaulaylibrary.org/asset/464542001,14,19,19,101,8,85,,A,"charlie, jin, matt, theresa"
+463904451,41.4434217,-73.9734641,4.33,https://macaulaylibrary.org/asset/463904451,17,15,15,134,8,85,,A,"charlie, jin, matt, theresa"
+463620271,43.8806651,-70.8004395,3.67,https://macaulaylibrary.org/asset/463066761,11,7,7,79,8,85,,A,"charlie, jin, matt, theresa"
+463066761,44.7271596,-69.6292992,4,https://macaulaylibrary.org/asset/463066761,11,7,7,79,8,85,,A,"charlie, jin, matt, theresa"
+463066751,44.7271596,-69.6292992,5,https://macaulaylibrary.org/asset/463066751,11,8,8,96,8,85,,A,"charlie, jin, matt, theresa"
+463020721,41.016011,-74.745018,3,https://macaulaylibrary.org/asset/463020721,11,10,10,83,8,85,,A,"charlie, jin, matt, theresa"
+463018961,41.016011,-74.745018,3,https://macaulaylibrary.org/asset/463018961,12,12,12,99,8,85,,A,"charlie, jin, matt, theresa"
+463003141,41.6907325,-71.6984815,5,https://macaulaylibrary.org/asset/463003141,10,11,11,97,8,85,,A,"charlie, jin, matt, theresa"
+462953211,41.6588008,-87.922318,3.5,https://macaulaylibrary.org/asset/462953211,19,7,7,103,8,85,,A,"charlie, jin, matt, theresa"
+462807501,41.6822544,-71.2382505,3.5,https://macaulaylibrary.org/asset/462807501,10,9,9,97,8,85,,A,"charlie, jin, matt, theresa"
+462714931,41.3150397,-73.4295988,5,https://macaulaylibrary.org/asset/462714931,10,8,8,82,8,85,,A,"charlie, jin, matt, theresa"
+466700421,43.8806651,-70.8004395,5,https://macaulaylibrary.org/asset/466702501,18,3,3,150,13,97,,L,"Mariam, Shiya, Iman, Hahfsa"
+466064351,41.0359237,-72.1389771,3,https://macaulaylibrary.org/asset/466702502 ,20,4,4,130,10,100,,L,"Mariam, Shiya, Iman, Hahfsa"
+466063711,41.0359237,-72.1389771,4,https://macaulaylibrary.org/asset/466702503,15,3,3,110,10,110,,L,"Mariam, Shiya, Iman, Hahfsa"
+465691531,38.6455061,-77.2361183,3,https://macaulaylibrary.org/asset/466702504,12,4,4,170,11,92,,L,"Mariam, Shiya, Iman, Hahfsa"
+465398611,43.672317,-71.290802,4,https://macaulaylibrary.org/asset/466702505,13,3,3,80,10,100,,L,"Mariam, Shiya, Iman, Hahfsa"
+465237631,41.0319425,-74.7411292,3,https://macaulaylibrary.org/asset/466702506,5,1,1,64,11,90,,L,"Mariam, Shiya, Iman, Hahfsa"
+464956961,38.5687916,-92.231851,5,https://macaulaylibrary.org/asset/466702507,22,5,5,210,8,105,,L,"Mariam, Shiya, Iman, Hahfsa"
+464955361,38.2012946,-90.545454,4.5,https://macaulaylibrary.org/asset/466702508,19,3,3,100,9,72,,L,"Mariam, Shiya, Iman, Hahfsa"
+464648171,37.1053727,-84.7009828,3,https://macaulaylibrary.org/asset/466702509,14,3,3,113,10,100,,L,"Mariam, Shiya, Iman, Hahfsa"
+464575711,41.7939856,-71.0306534,3,https://macaulaylibrary.org/asset/466702510,16,3,3,140,10,99,,L,"Mariam, Shiya, Iman, Hahfsa"
+464542001,44.5336939,-70.1655915,5,https://macaulaylibrary.org/asset/466702511,11,2,2,125,10,94,,L,"Mariam, Shiya, Iman, Hahfsa"
+463904451,41.4434217,-73.9734641,4.33,https://macaulaylibrary.org/asset/466702512,13,5,5,112,10,95,,L,"Mariam, Shiya, Iman, Hahfsa"
+463620271,43.8806651,-70.8004395,3.67,https://macaulaylibrary.org/asset/466702513,21,4,4,128,10,93,,L,"Mariam, Shiya, Iman, Hahfsa"
+463066761,44.7271596,-69.6292992,4,https://macaulaylibrary.org/asset/466702514,22,5,5,140,5,90,,L,"Mariam, Shiya, Iman, Hahfsa"
+463066751,44.7271596,-69.6292992,5,https://macaulaylibrary.org/asset/466702515,11,3,3,90,9,100,,L,"Mariam, Shiya, Iman, Hahfsa"
+463020721,41.016011,-74.745018,3,https://macaulaylibrary.org/asset/466702516,12,2,2,105,10,91,,L,"Mariam, Shiya, Iman, Hahfsa"
+463018961,41.016011,-74.745018,3,https://macaulaylibrary.org/asset/466702517,11,3,3,97,10,92,,L,"Mariam, Shiya, Iman, Hahfsa"
+532680791,39.3297166,-82.3486662,3,https://macaulaylibrary.org/asset/532680791,18,5,5,100,8.5,94,,L,"Mariam, Shiya, Iman, Hahfsa"
+532680731,39.3297166,-82.3486662,5,https://macaulaylibrary.org/asset/532680731,17,6,6,90,9,99,,L,"Mariam, Shiya, Iman, Hahfsa"
+532680741,39.3297166,-82.3486662,3,https://macaulaylibrary.org/asset/532680741,18,5,5,97,9,99,,L,"Mariam, Shiya, Iman, Hahfsa"
+532680721,39.3297166,-82.3486662,4,https://macaulaylibrary.org/asset/532680721,18,5,5,104,8,96,,L,"Mariam, Shiya, Iman, Hahfsa"
+532680711,39.3297166,-82.3486662,4,https://macaulaylibrary.org/asset/532680711,17,7,7,93,9,98,,L,"Mariam, Shiya, Iman, Hahfsa"
+520867961,43.647308,-70.865283,3,https://macaulaylibrary.org/asset/520867961,NA,NA,NA,NA,NA,NA,no clear sonograph,L,"Mariam, Shiya, Iman, Hahfsa"
+511651301,38.6455061,-77.2361183,3,https://macaulaylibrary.org/asset/511651301,NA,NA,NA,NA,NA,NA,no song ,L,"Mariam, Shiya, Iman, Hahfsa"
+510538621,41.4355842,-71.6682816,3,https://macaulaylibrary.org/asset/510538621,8,7,7,89,9,100,,L,"Mariam, Shiya, Iman, Hahfsa"
+492010421,41.3616071,-75.0262356,3,https://macaulaylibrary.org/asset/492010421,11,8,8,75,9,99,,L,"Mariam, Shiya, Iman, Hahfsa"
+481160081,41.4355842,-71.6682816,3,https://macaulaylibrary.org/asset/481160081,11,6,6,90,9,99,,L,"Mariam, Shiya, Iman, Hahfsa"
+481158721,41.4355842,-71.6682816,3,https://macaulaylibrary.org/asset/481158721,18,10,10,97,9,99,,L,"Mariam, Shiya, Iman, Hahfsa"
+476805291,43.9559559,-89.8181339,3,https://macaulaylibrary.org/asset/476805291,10,7,7,75,8,99,,L,"Mariam, Shiya, Iman, Hahfsa"
+468074411,34.9064342,-84.3418479,3,https://macaulaylibrary.org/asset/468074411,13,5,5,75,9,99,,L,"Mariam, Shiya, Iman, Hahfsa"
+467791111,40.9955955,-72.0642866,4,https://macaulaylibrary.org/asset/467791111,21,6,6,82,9,99,,L,"Mariam, Shiya, Iman, Hahfsa"
+466958711,38.8678252,-92.3256795,5,https://macaulaylibrary.org/asset/466958711,,,,,,,no clear syllables,L,"Mariam, Shiya, Iman, Hahfsa"
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+466958701,38.8678252,-92.3256795,3,https://macaulaylibrary.org/asset/466958701,21,9,,73,9,99,,,"Mariam, Shiya, Iman, Hahfsa"
+466702501,43.8806651,-70.8004395,4,https://macaulaylibrary.org/asset/461094651,21,12,,120,10,122,,M,"Jackie, Sophia, Miguel "
+4.61E+08,30.41122,-95.2857,5,https://macaulaylibrary.org/asset/460916251,5,5,,40,10,122,,M,"Jackie, Sophia, Miguel "
+4.61E+08,42.49256,-71.0465,4,https://macaulaylibrary.org/asset/460896521,15,10,,150,10,122,,M,"Jackie, Sophia, Miguel "
+4.61E+08,45.00207,-79.9715,4,https://macaulaylibrary.org/asset/460842761,18,10,,115,10,122,,M,"Jackie, Sophia, Miguel "
+4.61E+08,41.8633,-73.9874,3,https://macaulaylibrary.org/asset/460802791,14,5,,120,10,122,,M,"Jackie, Sophia, Miguel "
+4.61E+08,40.46337,-89.7881,5,https://macaulaylibrary.org/asset/460644371,27,5,,110,10,122,,M,"Jackie, Sophia, Miguel "
+4.61E+08,44.12781,-89.8769,5,https://macaulaylibrary.org/asset/460542361,11,7,,105,10,122,,M,"Jackie, Sophia, Miguel "
+4.61E+08,40.46935,-75.2249,4,https://macaulaylibrary.org/asset/460531371,11,9,,105,10,122,,M,"Jackie, Sophia, Miguel "
+4.60E+08,34.76615,-76.9556,3,https://macaulaylibrary.org/asset/459596501,17,10,,130,10,122,,M,"Jackie, Sophia, Miguel "
+4.59E+08,43.28017,-81.8126,5,https://macaulaylibrary.org/asset/459415651,16,12,,95,10,122,,M,"Jackie, Sophia, Miguel "
+4.59E+08,40.44864,-80.3184,3,https://macaulaylibrary.org/asset/459412131,15,8,,70,10,122,,M,"Jackie, Sophia, Miguel "
+462639291,36.1521921,-86.9284072,4,https://macaulaylibrary.org/asset/462639291,9,7,,90,10,113,,A,"charlie, jin, matt, theresa"
+462629081,41.355506,-70.67022,4,https://macaulaylibrary.org/asset/462629081,9,9,,95,10,113,,A,"charlie, jin, matt, theresa"
+462625361,45.3526278,-80.1909256,3,https://macaulaylibrary.org/asset/462625361,18,11,,115,10,113,,A,"charlie, jin, matt, theresa"
+462625331,45.3526278,-80.1909256,4,https://macaulaylibrary.org/asset/462625331,17,9,,110,10,113,,A,"charlie, jin, matt, theresa"
+462509961,44.228787,-69.863112,4,https://macaulaylibrary.org/asset/462509961,27,14,,105,10,113,,A,"charlie, jin, matt, theresa"
+462254751,41.6588008,-87.922318,4.5,https://macaulaylibrary.org/asset/462254751,14,9,,104,10,113,,A,"charlie, jin, matt, theresa"
+462235471,44.1259168,-89.8781667,4,https://macaulaylibrary.org/asset/462235471,8,10,,92,10,113,,A,"charlie, jin, matt, theresa"
+462200711,41.6588008,-87.922318,4,https://macaulaylibrary.org/asset/462200711,13,7,,97,10,113,,A,"charlie, jin, matt, theresa"
+462154121,41.6588008,-87.922318,3,https://macaulaylibrary.org/asset/462154121,16,8,,119,10,113,,A,"charlie, jin, matt, theresa"
+462092301,41.6588008,-87.922318,4,https://macaulaylibrary.org/asset/462092301,15,10,,109,10,113,,A,"charlie, jin, matt, theresa"
+462022671,41.6588008,-87.922318,5,https://macaulaylibrary.org/asset/462022671,16,7,,113,10,113,,A,"charlie, jin, matt, theresa"
+462013931,41.6588008,-87.922318,3,https://macaulaylibrary.org/asset/462013931,15,8,,99,10,113,,A,"charlie, jin, matt, theresa"
+164023851,43.5086506,-91.3480252,4.5,https://macaulaylibrary.org/asset/164023851,20,8,,115,9,144,,J,"Annery, Jordyn"
+163976541,41.2170095,-81.5253997,3.5,https://macaulaylibrary.org/asset/163976541,17,10,,105,10,100,,J,"Annery, Jordyn"
+163626761,40.1994676,-75.4040945,3,https://macaulaylibrary.org/asset/163626761,16,8,,87,9,144,,J,"Annery, Jordyn"
+163603401,43.9028358,-69.9485135,3,https://macaulaylibrary.org/asset/163603401,13,14,,87,10,100,,J,"Annery, Jordyn"
+163379911,44.5590717,-77.1170926,3.5,https://macaulaylibrary.org/asset/163379911,14,10,,97,9,144,,J,"Annery, Jordyn"
+163376561,44.6734347,-77.1429107,4.5,https://macaulaylibrary.org/asset/163376561,20,13,,74,10,100,,J,"Annery, Jordyn"
+163376441,44.6734347,-77.1429107,3,https://macaulaylibrary.org/asset/163376441,14,7,,106,9,144,,J,"Annery, Jordyn"
+163318871,43.508689,-91.3480461,3,https://macaulaylibrary.org/asset/163318871,14,12,,170,10,100,,J,"Annery, Jordyn"
+163315821,42.0212167,-70.8722806,3,https://macaulaylibrary.org/asset/163315821,11,8,,79,9,144,,J,"Annery, Jordyn"
+163094451,42.2930453,-76.6550678,4.5,https://macaulaylibrary.org/asset/163094451,16,19,,99,10,100,,J,"Annery, Jordyn"
+163081011,41.9303792,-88.4138918,4,https://macaulaylibrary.org/asset/163081011,17,13,,91,9,144,,J,"Annery, Jordyn"
+163046011,43.508689,-91.3480461,3,https://macaulaylibrary.org/asset/163046011,15,12,,79,10,100,,J,"Annery, Jordyn"
+163045971,43.508689,-91.3480461,3,https://macaulaylibrary.org/asset/163045971,15,8,,82,9,144,,J,"Annery, Jordyn"
+162914431,41.9303792,-88.4138918,4.5,https://macaulaylibrary.org/asset/162914431,16,12,,89,10,100,,J,"Annery, Jordyn"
+162830621,42.3598404,-72.0069802,4.5,https://macaulaylibrary.org/asset/162830621,12,15,,96,9,144,,J,"Annery, Jordyn"
+162786921,43.509884,-91.349888,3,https://macaulaylibrary.org/asset/162786921,15,12,,87,10,100,,J,"Annery, Jordyn"
+162640041,41.9303792,-88.4138918,3.5,https://macaulaylibrary.org/asset/162640041,16,11,,86,9,144,,J,"Annery, Jordyn"
+162639831,41.9303792,-88.4138918,3.5,https://macaulaylibrary.org/asset/162639831,18,13,,96,10,100,,J,"Annery, Jordyn"
+162563791,40.8113121,-85.6735533,3.5,https://macaulaylibrary.org/asset/162563791,NA,NA,,NA,9,144,song not in full,J,"Annery, Jordyn"
+162453691,43.508615,-91.3480038,3.5,https://macaulaylibrary.org/asset/162453691,15,9,,83,10,100,,J,"Annery, Jordyn"
+162417571,43.508689,-91.3480461,4.75,https://macaulaylibrary.org/asset/162417571,16,6,,93,9,144,,J,"Annery, Jordyn"
+162414811,41.7391369,-70.3801775,3.5,https://macaulaylibrary.org/asset/162414811,14,13,,88,10,100,,J,"Annery, Jordyn"
+162310641,38.1235514,-85.5312359,3,https://macaulaylibrary.org/asset/162310641,16,12,,107,9,144,,J,"Annery, Jordyn"
+162174561,42.326697,-85.3473759,3,https://macaulaylibrary.org/asset/162174561,15,11,,70,10,100,,J,"Annery, Jordyn"
+162088181,41.9303792,-88.4138918,4.67,https://macaulaylibrary.org/asset/162088181,18,13,,91,9,144,,J,"Annery, Jordyn"
+122936791,42.3101677,-76.5216895,3,https://macaulaylibrary.org/asset/122936791,11,9,,125,10,100,,J,"Annery, Jordyn"
+108191821,36.0272144,-84.2029738,4,https://macaulaylibrary.org/asset/108191821,14,9,,88,9,144,,J,"Annery, Jordyn"
+106906901,43.8512527,-73.1217867,3.5,https://macaulaylibrary.org/asset/106906901,7,3,,74,10,100,,J,"Annery, Jordyn"
+106768561,39.9030754,-76.3985395,3,https://macaulaylibrary.org/asset/106768561,NA,NA,,NA,9,144,song not visible in sonogram,J,"Annery, Jordyn"
+106743361,42.219,-71.064,3.33,https://macaulaylibrary.org/asset/106743361,17,12,,107,10,100,,J,"Annery, Jordyn"
+106067351,40.0848766,-76.8838316,3,https://macaulaylibrary.org/asset/106067351,24,9,,111,9,144,,J,"Annery, Jordyn"
+105491461,41.4423645,-70.6709236,3,https://macaulaylibrary.org/asset/105491461,10,17,,85,10,100,,J,"Annery, Jordyn"
+105480291,40.7022581,-74.6996035,3,https://macaulaylibrary.org/asset/105480291,NA,NA,,NA,9,144,"call, not song",J,"Annery, Jordyn"
+105441401,44.8739062,-79.8701441,3,https://macaulaylibrary.org/asset/105441401,21,8,,127,10,100,,J,"Annery, Jordyn"
+105394681,39.4731729,-76.2158489,4,https://macaulaylibrary.org/asset/105394681,14,8,,101,9,144,,J,"Annery, Jordyn"
+105333561,41.745219,-73.45148,3.5,https://macaulaylibrary.org/asset/105333561,17,7,,103,10,100,,J,"Annery, Jordyn"
+105332491,32.640996,-92.3421907,3.5,https://macaulaylibrary.org/asset/105332491,NA,NA,,NA,9,144,not a prarie warbler,J,"Annery, Jordyn"
+105084871,37.35873,-90.02369,3,https://macaulaylibrary.org/asset/105084871,17,13,,83,10,100,,J,"Annery, Jordyn"
+104951981,41.4319095,-72.2873071,4.5,https://macaulaylibrary.org/asset/104951981,5,5,,63,9,144,,J,"Annery, Jordyn"
+104929271,36.0076404,-84.1747421,4,https://macaulaylibrary.org/asset/104929271,NA,NA,,NA,10,100,sonogram difficult to measure,J,"Annery, Jordyn"
+104807001,35.7277016,-82.7044773,4,https://macaulaylibrary.org/asset/104807001,23,15,,99,9,144,,J,"Annery, Jordyn"
+104806921,35.7277016,-82.7044773,4,https://macaulaylibrary.org/asset/104806921,13,12,,92,10,100,,J,"Annery, Jordyn"
+104677051,36.782769,-78.290119,3,https://macaulaylibrary.org/asset/104677051,11,7,,57,9,144,,J,"Annery, Jordyn"
+104461001,31.010598,-93.4009552,4,https://macaulaylibrary.org/asset/104461001,7,12,,97,10,100,,J,"Annery, Jordyn"
+104278211,39.9030754,-76.3985395,4.5,https://macaulaylibrary.org/asset/104278211,16,10,,66,9,144,,J,"Annery, Jordyn"
+103992181,37.8712557,-78.31542,3,https://macaulaylibrary.org/asset/103992181,13,6,,92,10,100,,J,"Annery, Jordyn"
+103568331,33.1106636,-83.6790204,3,https://macaulaylibrary.org/asset/103568331,6,8,,72,9,144,,J,"Annery, Jordyn"
+103524631,42.7015506,-86.1950397,4,https://macaulaylibrary.org/asset/103524631,16,9,,82,10,100,,J,"Annery, Jordyn"
+103474941,38.9790602,-79.232995,3,https://macaulaylibrary.org/asset/103474941,11,11,,87,9,144,,J,"Annery, Jordyn"
+103348391,38.0486211,-90.5790889,3,https://macaulaylibrary.org/asset/103348391,20,18,,103,10,100,,J,"Annery, Jordyn"
+244359351,42.1351839,-75.9398242,3,https://macaulaylibrary.org/asset/244359351,13,13,,114,13,89,,G,Angel
+244228331,41.6526977,-87.0690317,3,https://macaulaylibrary.org/asset/244228331,17,11,,114,10,90,,G,Angel
+244223081,40.0735643,-76.8955421,3,https://macaulaylibrary.org/asset/244223081,14,15,,110,9,91,,G,Angel
+244214281,40.0735643,-76.8955421,3,https://macaulaylibrary.org/asset/244214281,24,10,,95,8,89,,G,Angel
+244206211,38.7353392,-75.4080963,5,https://macaulaylibrary.org/asset/244206211,24,10,,109,9,90,,G,Angel
+244193521,44.829217,-79.6694314,3,https://macaulaylibrary.org/asset/244193521,7,11,,89,10,90,,G,Angel
+244193471,44.829217,-79.6694314,3,https://macaulaylibrary.org/asset/244193471,14,8,,90,10,90,,G,Angel
+244189181,43.508689,-91.3480461,3,https://macaulaylibrary.org/asset/244189181,15,10,,100,9,90,,G,Angel
+244130091,40.3164873,-74.885323,4,https://macaulaylibrary.org/asset/244130091,13,9,,91,9,90,,G,Angel
+244024591,41.6348031,-70.5607738,3,https://macaulaylibrary.org/asset/244024591,20,7,,110,8,90,,G,Angel
+243896271,36.2504818,-85.5691786,4,https://macaulaylibrary.org/asset/243896271,12,8,,89,10,90,,G,Angel
+243880591,41.8629448,-75.9973454,3,https://macaulaylibrary.org/asset/243880591,18,11,,105,11,89,,G,Angel
+243672361,40.569363,-91.658238,3.5,https://macaulaylibrary.org/asset/243672361,9,13,,114,12,89,,G,Angel
+243648221,42.2235303,-76.2744478,3.5,https://macaulaylibrary.org/asset/243648221,14,11,,94,13,89,,G,Angel
+243630501,39.7286839,-76.0729542,3,https://macaulaylibrary.org/asset/243630501,13,9,,98,10,89,,G,Angel
+243485151,44.126715,-89.898883,4,https://macaulaylibrary.org/asset/243485151,20,9,,100,10,89,,G,Angel
+243353651,30.6990838,-91.0701162,3,https://macaulaylibrary.org/asset/243353651,15,8,,95,9,89,,G,Angel
+243331781,40.0587274,-82.2385293,3,https://macaulaylibrary.org/asset/243331781,17,11,,87,9,89,,G,Angel
+243321301,35.9553462,-84.3811418,4,https://macaulaylibrary.org/asset/243321301,12,9,,89,10,89,,G,Angel
+243319641,44.1263648,-89.8989901,3,https://macaulaylibrary.org/asset/243319641,13,9,,91,10,91,,G,Angel
+243274451,44.157403,-89.855397,3,https://macaulaylibrary.org/asset/243274451,12,9,,90,10,91,,G,Angel
+243245031,41.401006,-70.602423,4,https://macaulaylibrary.org/asset/243245031,10,9,,76,11,85,,G,Angel
+243186891,37.189522,-78.821437,3,https://macaulaylibrary.org/asset/243186891,22,10,,93,12,91,,G,Angel
+243106401,44.114991,-89.882483,3,https://macaulaylibrary.org/asset/243106401,10,12,,92,13,91,,G,Angel
+242983461,33.1479624,-83.7534984,3,https://macaulaylibrary.org/asset/242983461,8,11,,89,12,89,,G,Angel
+242982371,33.1479624,-83.7534984,3,https://macaulaylibrary.org/asset/242982371,7,15,,110,23.4,132,,H,Fitz Dettmer
+242849761,35.9371866,-84.4212692,3,https://macaulaylibrary.org/asset/242849761,12,15,,130,23.4,132,,H,Fitz Dettmer
+242849461,35.9371866,-84.4212692,3,https://macaulaylibrary.org/asset/242849461,14,18.8,,139,23.4,132,,H,Fitz Dettmer
+242821121,42.3483635,-76.1646831,3,https://macaulaylibrary.org/asset/242821121,17,17.2,,154,23.4,132,,H,Fitz Dettmer
+242800501,37.462891,-77.9100446,4.5,https://macaulaylibrary.org/asset/242800501,22,16.4,,146,23.4,132,,H,Fitz Dettmer
+242777631,44.0082861,-70.9869234,3,https://macaulaylibrary.org/asset/242777631,NA,NA,,NA,NA,NA,"Quiet, multiple species, might not actually have a Prairie Warbler in there",H,Fitz Dettmer
+242777021,40.2732147,-77.184931,3,https://macaulaylibrary.org/asset/242777021,12,14.6,,109.3,23.4,132,,H,Fitz Dettmer
+242674001,39.3297166,-82.3486662,3,https://macaulaylibrary.org/asset/242674001,20,15.2,,161,23.4,132,,H,Fitz Dettmer
+242665261,43.508689,-91.3480461,3,https://macaulaylibrary.org/asset/242665261,15,18.1,,125,23.4,132,,H,Fitz Dettmer
+242602961,33.1159126,-83.6911999,3,https://macaulaylibrary.org/asset/242602961,NA,NA,,NA,NA,NA,"Very noisy, 1.5 seconds, seems like it missed the first half of the song?",H,Fitz Dettmer
+242552211,43.6609176,-73.334856,4,https://macaulaylibrary.org/asset/242552211,24,19,,130,11,15.8,,H,Robert Criollo
+242462751,44.1017468,-76.0739772,5,https://macaulaylibrary.org/asset/242462751,38,21,,172,11,15.8,,H,Robert Criollo
+242462561,44.1017468,-76.0739772,5,https://macaulaylibrary.org/asset/242462561,16,25,,135,11,15.8,,H,Robert Criollo
+242306711,42.4259195,-76.3357544,3,https://macaulaylibrary.org/asset/242306711,14,14,,125,11,15.8,,H,Robert Criollo
+242237151,36.2488764,-87.9298711,3,https://macaulaylibrary.org/asset/242237151,9,10,,120,11,15.8,,H,Robert Criollo
+242175331,37.462891,-77.9100446,4.67,https://macaulaylibrary.org/asset/242175331,15,12,,125,11,15.8,,H,Robert Criollo
+242160041,43.5086293,-91.3480471,4,https://macaulaylibrary.org/asset/242160041,14,16,,112,11,15.8,,H,Robert Criollo
+241922481,42.7466592,-71.7079653,4,https://macaulaylibrary.org/asset/241922481,21,20,,115,11,15.8,,H,Robert Criollo
+241794781,44.127237,-89.89876,4.5,https://macaulaylibrary.org/asset/241794781,12,12,,139,11,15.8,,H,Robert Criollo
+241746671,42.23157,-71.76591,3,https://macaulaylibrary.org/asset/241746671,18,12,,150,9,55,,H,Ahmed Chaudhry 
+241668231,43.508689,-91.3480461,3,https://macaulaylibrary.org/asset/241668231,16,17,,95,9,55,,H,Ahmed Chaudhry
+241667131,42.4657256,-78.5749054,3.5,https://macaulaylibrary.org/asset/241667131,12,10,,89,9,55,,H,Ahmed Chaudhry
+241666551,42.4657256,-78.5749054,4,https://macaulaylibrary.org/asset/241666551,17,12,,90,9,55,,H,Ahmed Chaudhry
+241666441,42.4657256,-78.5749054,3,https://macaulaylibrary.org/asset/241666441,12,10,,70,9,55,,H,Ahmed Chaudhry
+241653451,44.69457,-78.14634,3,https://macaulaylibrary.org/asset/241653451,15,13,,81,9,55,,H,Ahmed Chaudhry
+241452661,41.3432688,-72.4012327,3,https://macaulaylibrary.org/asset/241452661,NA,NA,,NA,NA,NA,sound too distorted,H,Ahmed Chaudhry
+241441391,42.562681,-86.054537,4,https://macaulaylibrary.org/asset/241441391,18,13,,115,9,55,,H,Ahmed Chaudhry
+241212301,43.5287596,-73.2130133,3,https://macaulaylibrary.org/asset/241212301,17,11,,110,9,55,,H,Ahmed Chaudhry
+241206331,41.736573,-73.119155,3,https://macaulaylibrary.org/asset/241206331,NA,NA,,NA,NA,NA,sound too distorted,H,Ahmed Chaudhry
+241071601,42.4290869,-72.7397141,3,https://macaulaylibrary.org/asset/241071601,6,7,,75,9,55,,H,Ahmed Chaudhry
+240938161,33.0920018,-83.7189102,3,https://macaulaylibrary.org/asset/240938161,7,5,,85,9,96,,H,Yujun He
+240872561,41.2170095,-81.5253997,3,https://macaulaylibrary.org/asset/240872561,8,7,,92,9,96,,H,Yujun He
+240872491,41.2170095,-81.5253997,3,https://macaulaylibrary.org/asset/240872491,16,10,,97,9,96,,H,Yujun He
+240855821,41.21491,-77.294653,4.5,https://macaulaylibrary.org/asset/240855821,21,9,,93,9,96,,H,Yujun He
+240843801,40.0916122,-76.8704581,3,https://macaulaylibrary.org/asset/240843801,14,8,,113,9,96,,H,Yujun He
+240645791,38.6996739,-90.7206013,3.5,https://macaulaylibrary.org/asset/240645791,21,7,,120,9,96,,H,Yujun He
+240633471,43.6989462,-73.3460045,3,https://macaulaylibrary.org/asset/240633471,15,8,,85,9,96,,H,Yujun He
+240615251,41.0290844,-72.1875189,3.5,https://macaulaylibrary.org/asset/240615251,15,10,,102,9,96,,H,Yujun He
+240572571,42.0328787,-72.7453709,4,https://macaulaylibrary.org/asset/240572571,14,9,,87,9,96,,H,Yujun He
+240506761,44.7258086,-86.111324,3,https://macaulaylibrary.org/asset/240506761,14,4,,85,9,96,,H,Yujun He
+240426511,44.6748566,-77.1439834,3,https://macaulaylibrary.org/asset/240426511,19,6,,110,9,96,,H,Yujun He
+240410261,44.307495,-69.847385,3.5,https://macaulaylibrary.org/asset/240410261,15,7,,111,9,96,,H,Yujun He
+240337431,41.1584379,-80.1921514,3,https://macaulaylibrary.org/asset/240337431,17,6,,77,9,96,,H,Yujun He
+236956291,38.7602075,-83.2351255,4.5,https://macaulaylibrary.org/asset/236956291,34,5,,109,9,96,,H,Yujun He
+236944131,38.7602075,-83.2351255,3.5,https://macaulaylibrary.org/asset/236944131,27,5,,86,9,96,,H,Yujun He
+231603331,38.7602075,-83.2351255,4,https://macaulaylibrary.org/asset/231603331,27,7,,84,9,96,,H,Yujun He
+212693481,40.4333883,-80.4041396,3,https://macaulaylibrary.org/asset/212693481,16,8,,78,9,96,,H,Yujun He
+212693471,40.4333883,-80.4041396,3,https://macaulaylibrary.org/asset/212693471,17,9,,80,9,96,,H,Yujun He
+191966601,42.444542,-76.215065,3,https://macaulaylibrary.org/asset/191966601,11,6,,57,9,96,,H,Yujun He
+189586911,42.2831722,-76.6559494,3.5,https://macaulaylibrary.org/asset/189586911,17,6,,88,9,96,,H,Yujun He
+248588171,42.7883464,-74.8642731,3,https://macaulaylibrary.org/asset/248588171,NA,NA,,NA,NA,NA,"decided to skip because sound was all over the place, showcasing different syllables for each and as well as duration and two khz and two sec. ",F,"Andrea, Colette, Leilani, Jessica"
+248310531,43.2801663,-81.8125892,4,https://macaulaylibrary.org/asset/248310531,12,3,,76,25,50,,F,"Andrea, Colette, Leilani, Jessica"
+248283591,36.593621,-82.852595,4,https://macaulaylibrary.org/asset/248283591,23,5,,114,25,50,,F,"Andrea, Colette, Leilani, Jessica"
+248099151,43.2801663,-81.8125892,4,https://macaulaylibrary.org/asset/248099151,13,5,,88,25,50,,F,"Andrea, Colette, Leilani, Jessica"
+247661591,34.9064342,-84.3418479,3,https://macaulaylibrary.org/asset/247661591,18,0,,119,25,50,,F,"Andrea, Colette, Leilani, Jessica"
+247661321,43.3402465,-72.5136801,4.5,https://macaulaylibrary.org/asset/247661321,8,5,,76,25,50,,F,"Andrea, Colette, Leilani, Jessica"
+247474641,38.5755815,-78.0879879,3,https://macaulaylibrary.org/asset/247474641,NA,NA,,NA,NA,NA,"decided to skip because sound was all over the place,  as well as it being diffcult to count syllables for each and as well as duration and two khz and two sec.",F,"Andrea, Colette, Leilani, Jessica"
+247252381,38.744918,-85.418697,4,https://macaulaylibrary.org/asset/247252381,9,5,,96,25,50,,F,"Andrea, Colette, Leilani, Jessica"
+247252371,38.744918,-85.418697,3,https://macaulaylibrary.org/asset/247252371,7,5,,51,25,50,,F,"Andrea, Colette, Leilani, Jessica"
+247226101,38.6896437,-76.8116322,3.5,https://macaulaylibrary.org/asset/247226101,15,5,,122,25,50,,F,"Andrea, Colette, Leilani, Jessica"
+247222651,38.721503,-76.8205101,3,https://macaulaylibrary.org/asset/247222651,10,3,,88,25,50,,F,"Andrea, Colette, Leilani, Jessica"
+247207601,40.448641,-80.318434,4.33,https://macaulaylibrary.org/asset/247207601,20,10,,102,25,50,,F,"Andrea, Colette, Leilani, Jessica"
+247133341,44.7161124,-86.1163573,3,https://macaulaylibrary.org/asset/247133341,8,9,,115,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+247095301,42.4058404,-83.9909935,3,https://macaulaylibrary.org/asset/247095301,15,10,,70,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+246848351,41.8902521,-88.2231558,3,https://macaulaylibrary.org/asset/246848351,7,8,,120,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+246762241,36.718319,-86.80342,4,https://macaulaylibrary.org/asset/246762241,15,7,,115,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+246534431,43.2547052,-81.8364716,3,https://macaulaylibrary.org/asset/246534431,14,5,,95,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+246345341,43.508689,-91.3480461,3.67,https://macaulaylibrary.org/asset/246345341,15,5,,93,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+246316311,41.398273,-70.704334,3,https://macaulaylibrary.org/asset/246316311,13,6,,122,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+246223731,38.1685,-77.189,3,https://macaulaylibrary.org/asset/246223731,12,3,,97,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+246089991,41.8902521,-88.2231558,3.5,https://macaulaylibrary.org/asset/246089991,7,7,,125,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+246041311,37.902753,-84.3596095,3,https://macaulaylibrary.org/asset/246041311,19,8,,121,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+246008191,41.1390575,-74.2551219,3,https://macaulaylibrary.org/asset/246008191,14,7,,110,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+246001191,41.858,-70.667,3.5,https://macaulaylibrary.org/asset/246001191,28,12,,129,10,120,,F,"Andrea, Colette, Leilani, Jessica"
+245961121,41.8902521,-88.2231558,3,https://macaulaylibrary.org/asset/245961121,11,7,,60,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245959711,41.8902521,-88.2231558,3,https://macaulaylibrary.org/asset/245959711,8,2,,95,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245959311,41.8902521,-88.2231558,3,https://macaulaylibrary.org/asset/245959311,7,2,,90,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245893011,41.8902521,-88.2231558,4.5,https://macaulaylibrary.org/asset/245893011,8,2,,110,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245875971,41.8902521,-88.2231558,3.5,https://macaulaylibrary.org/asset/245875971,NA,NA,,NA,NA,NA,Skipped because the sound is not clear,F,"Andrea, Colette, Leilani, Jessica"
+245802201,39.892282,-74.223711,3,https://macaulaylibrary.org/asset/245802201,8,3,,97,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245767311,40.731016,-89.514326,3,https://macaulaylibrary.org/asset/245767311,9,0,,64,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245702631,43.3622238,-71.6049821,3,https://macaulaylibrary.org/asset/245702631,11,2,,69,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245681211,41.8902521,-88.2231558,3,https://macaulaylibrary.org/asset/245681211,18,3,,97,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245679561,41.3823249,-74.0556476,3,https://macaulaylibrary.org/asset/245679561,11,3,,76,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245650161,42.1353684,-75.9091816,4,https://macaulaylibrary.org/asset/245650161,17,4,,102,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245622721,38.9338272,-74.9550854,3,https://macaulaylibrary.org/asset/245622721,7,2,,64,17,100,,F,"Andrea, Colette, Leilani, Jessica"
+245569101,41.8902521,-88.2231558,4.33,https://macaulaylibrary.org/asset/245569101,16,15,,82.5,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+245506451,41.198398,-74.083381,3,https://macaulaylibrary.org/asset/245506451,16,14,,104,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+245437541,44.8158722,-69.4343485,3,https://macaulaylibrary.org/asset/245437541,12,16,,69,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+245214361,40.4374998,-74.3280298,3,https://macaulaylibrary.org/asset/245214361,12,15,,85,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+245047731,44.811029,-79.645192,3,https://macaulaylibrary.org/asset/245047731,10,0,,73,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+244924361,41.6630486,-87.0366169,3,https://macaulaylibrary.org/asset/244924361,9,19,,88,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+244905111,41.5486541,-73.5336166,3,https://macaulaylibrary.org/asset/244905111,9,12,,70,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+244895281,39.7384247,-77.2546296,4.5,https://macaulaylibrary.org/asset/244895281,24,15,,78,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+244883931,39.814338,-83.9908218,3,https://macaulaylibrary.org/asset/244883931,11,17,,80,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+244879631,43.184984,-88.34132,3.5,https://macaulaylibrary.org/asset/244879631,9,10,,94,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+244689101,43.508689,-91.3480461,3,https://macaulaylibrary.org/asset/244689101,12,19,,62,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+244615341,42.7466592,-71.7079653,4.5,https://macaulaylibrary.org/asset/244615341,26,8,,107,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+244537411,41.6173192,-71.7808914,4,https://macaulaylibrary.org/asset/244537411,13,10,,60,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+244364991,43.508689,-91.3480461,4,https://macaulaylibrary.org/asset/244364991,15,4,,85,9,100,,F,"Andrea, Colette, Leilani, Jessica"
+351587921,31.5442786,-89.029008,4,https://macaulaylibrary.org/asset/351587921,9,0.5,,9,1.25,13,,C,"Amanda, Liam, David"
+351331421,43.2801663,-81.8125892,4,https://macaulaylibrary.org/asset/351331421,14,1,,10.5,1.25,13,,C,"Amanda, Liam, David"
+351331411,43.2801663,-81.8125892,3,https://macaulaylibrary.org/asset/351331411,11,1,,10,1.25,13,,C,"Amanda, Liam, David"
+351203511,42.1869503,-73.5971375,3,https://macaulaylibrary.org/asset/351203511,16,1,,13,1.25,13,,C,"Amanda, Liam, David"
+350919141,43.2801663,-81.8125892,3.5,https://macaulaylibrary.org/asset/350919141,12,1,,9,1.25,13,,C,"Amanda, Liam, David"
+350825671,38.3640313,-84.7452323,3,https://macaulaylibrary.org/asset/350825671,15,1,,14,1.25,13,,C,"Amanda, Liam, David"
+350784161,42.4680852,-71.1582396,3,https://macaulaylibrary.org/asset/350784161,15,1,,13,1.25,13,,C,"Amanda, Liam, David"
+350755091,41.0319425,-74.7411292,3.5,https://macaulaylibrary.org/asset/350755091,-,-,,-,1.25,13,Can't read,C,"Amanda, Liam, David"
+350659621,43.3940482,-70.6263399,4.5,https://macaulaylibrary.org/asset/350659621,15,0.5,,14,1.25,13,,C,"Amanda, Liam, David"
+350620081,41.927895,-73.723911,3.5,https://macaulaylibrary.org/asset/350620081,17,1,,14,1.25,13,,C,"Amanda, Liam, David"
+350616401,41.0617371,-77.9071884,3,https://macaulaylibrary.org/asset/350616401,16,0.5,,14,1.25,13,,C,"Amanda, Liam, David"
+350616281,41.0617371,-77.9071884,3,https://macaulaylibrary.org/asset/350616281,18,1,,15,1.25,13,,C,"Amanda, Liam, David"
+350558551,41.478683,-81.97718,3,https://macaulaylibrary.org/asset/350558551,10,0.5,,9,1.25,13,,C,"Amanda, Liam, David"
+350516801,41.6822544,-71.2382505,3,https://macaulaylibrary.org/asset/350516801,12,1,,13,1.25,13,,C,"Amanda, Liam, David"
+350512771,41.1467412,-79.4988137,4,https://macaulaylibrary.org/asset/350512771,23,0.25,,13,1.25,13,,C,"Amanda, Liam, David"
+350496691,38.181886,-77.517042,3,https://macaulaylibrary.org/asset/350496691,22,0.5,,12,1.25,13,,C,"Amanda, Liam, David"
+350439711,41.478746,-81.979261,3.5,https://macaulaylibrary.org/asset/350439711,15,1,,12.8,1,10,,C,"Amanda, Liam, David"
+350430891,41.4780938,-81.9772331,4.5,https://macaulaylibrary.org/asset/350430891,15,1,,10,1,10,,C,"Amanda, Liam, David"
+350383031,41.4700009,-73.25881,3,https://macaulaylibrary.org/asset/350383031,22,1,,14,1,10,,C,"Amanda, Liam, David"
+350377941,41.398118,-70.704297,5,https://macaulaylibrary.org/asset/350377941,12,1,,11,1,10,,C,"Amanda, Liam, David"
+349989691,43.2666087,-76.3654238,3,https://macaulaylibrary.org/asset/349989691,12,1,,10,1,10,,C,"Amanda, Liam, David"
+349984501,44.139204,-70.487797,4,https://macaulaylibrary.org/asset/349984501,14,1,,14,1,10,,C,"Amanda, Liam, David"
+349983601,40.5926379,-91.7136423,3,https://macaulaylibrary.org/asset/349983601,9,1,,11.5,1,10,,C,"Amanda, Liam, David"
+349820501,39.793538,-74.275055,3,https://macaulaylibrary.org/asset/349820501,10,1,,14,1,10,,C,"Amanda, Liam, David"
+349804411,41.6349968,-70.3534057,3,https://macaulaylibrary.org/asset/349804411,12,1,,11,1,10,,C,"Amanda, Liam, David"
+349781761,36.442576,-79.795751,3,https://macaulaylibrary.org/asset/349781761,28,1.5,,13,1,10,,C,"Amanda, Liam, David"
+349781461,36.442576,-79.795751,3,https://macaulaylibrary.org/asset/349781461,13,0.75,,22,1,10,,C,"Amanda, Liam, David"
+349678691,35.8720815,-86.4342499,5,https://macaulaylibrary.org/asset/349678691,16,1,,13,1,10,,C,"Amanda, Liam, David"
+349575261,38.8949742,-92.210784,3.5,https://macaulaylibrary.org/asset/349575261,20,1.5,,12.5,1,10,,C,"Amanda, Liam, David"
+349425151,43.40066,-70.62553,3.5,https://macaulaylibrary.org/asset/349425151,12,1,,11.5,1,10,,C,"Amanda, Liam, David"
+349383191,44.0304348,-73.4355471,4,https://macaulaylibrary.org/asset/349383191,7,1,,9,1,10,,C,"Amanda, Liam, David"
+349260191,41.7781927,-70.500555,4,https://macaulaylibrary.org/asset/349260191,13,1.5,,14,1,10,,C,"Amanda, Liam, David"
+349177171,44.7711808,-67.9966281,3,https://macaulaylibrary.org/asset/349177171,18,1,,12.5,1,10,,C,"Amanda, Liam, David"
+349158241,41.0319425,-74.7411292,3,https://macaulaylibrary.org/asset/349158241,12,1,,12,1.25,14.2,,C,"Amanda, Liam, David"
+349158251,41.0319425,-74.7411292,4,https://macaulaylibrary.org/asset/349158251,12,0.75,,12,1.25,14.2,,C,"Amanda, Liam, David"
+349158231,41.0319425,-74.7411292,4,https://macaulaylibrary.org/asset/349158231,12,0.5,,12,1.25,14.2,,C,"Amanda, Liam, David"
+348818271,43.8512527,-73.1217867,4,https://macaulaylibrary.org/asset/348818271,13,0.5,,18,1.25,14.2,,C,"Amanda, Liam, David"
+348815011,32.548375,-89.934649,3,https://macaulaylibrary.org/asset/348815011,11,0.5,,13.5,1.25,14.2,,C,"Amanda, Liam, David"
+348736341,38.1079022,-87.4288774,5,https://macaulaylibrary.org/asset/348736341,14,1,,13,1.25,14.2,,C,"Amanda, Liam, David"
+348697811,40.2469466,-75.7919732,4,https://macaulaylibrary.org/asset/348697811,17,0.5,,13.5,1.25,14.2,,C,"Amanda, Liam, David"
+348311121,41.7315289,-73.5626101,4.5,https://macaulaylibrary.org/asset/348311121,12,1,,15,1.25,14.2,,C,"Amanda, Liam, David"
+348180721,39.7633333,-74.1058333,3,https://macaulaylibrary.org/asset/348180721,10,0.5,,9,1.25,14.2,,C,"Amanda, Liam, David"
+347539401,40.321791,-75.4144164,3,https://macaulaylibrary.org/asset/347539401,14,0.75,,15,1.25,14.2,,C,"Amanda, Liam, David"
+347509341,42.3483635,-76.1646831,4.5,https://macaulaylibrary.org/asset/347509341,15,0.75,,12.5,1.25,14.2,,C,"Amanda, Liam, David"
+347506751,39.9479768,-75.4458618,4,https://macaulaylibrary.org/asset/347506751,9,0.75,,11,1.25,14.2,,C,"Amanda, Liam, David"
+347445241,38.748396,-83.4636,3,https://macaulaylibrary.org/asset/347445241,-,-,,-,1.25,14.2,"Can't read, wrong bird",C,"Amanda, Liam, David"
+347434931,44.5681222,-77.0958281,3,https://macaulaylibrary.org/asset/347434931,18,0.75,,15,1.25,14.2,,C,"Amanda, Liam, David"
+347425421,44.478032,-70.327741,4,https://macaulaylibrary.org/asset/347425421,-,-,,-,1.25,14.2,Can't read,C,"Amanda, Liam, David"
+347423411,44.353681,-70.324044,4.5,https://macaulaylibrary.org/asset/347423411,-,-,,-,1.25,14.2,"Can't read, wrong bird",C,"Amanda, Liam, David"
+347064881,44.899371,-86.0208678,4.5,https://macaulaylibrary.org/asset/347064881,8,0.75,,11.5,1.25,14.2,,C,"Amanda, Liam, David"
+1.03E+08,32.8388,-83.6077,3.5,https://macaulaylibrary.org/asset/103262811,NA,NA,,NA,11,130,"Unclear, sounds like it was recorded far from bird. ",K,"Isha, Jade, Nina, Dana, Bryce"
+1.03E+08,41.90243,-86.5983,3.5,https://macaulaylibrary.org/asset/68212851       ,28,27,,155,11,130,,K,"Isha, Jade, Nina, Dana, Bryce"
+1.03E+08,40.00469,-88.6149,4,https://macaulaylibrary.org/asset/103238011,16,15,,160,11,130,,K,"Isha, Jade, Nina, Dana, Bryce"
+1.03E+08,44.84306,-79.6791,4,https://macaulaylibrary.org/asset/103160881,23,20,,185,11,130,,K,"Isha, Jade, Nina, Dana, Bryce"
+1.03E+08,41.23439,-74.2379,3,https://macaulaylibrary.org/asset/103085751,11,40,,140,11,130,,K,"Isha, Jade, Nina, Dana, Bryce"
+1.03E+08,40.54566,-91.6162,3,https://macaulaylibrary.org/asset/102930861,12,73,,138,11,130,,K,"Isha, Jade, Nina, Dana, Bryce"
+91136301,43.31699,-80.1534,4,https://macaulaylibrary.org/asset/91136301,11,7,,105,11,130,,K,"Isha, Jade, Nina, Dana, Bryce"
+91135791,43.31699,-80.1534,5,https://macaulaylibrary.org/asset/91135791,10,20,,135,11,130,,K,"Isha, Jade, Nina, Dana, Bryce"
+534427,39.71943,-77.9389,3.8,https://macaulaylibrary.org/asset/534427,NA,NA,,NA,11,130,Probably calls from juveniles,K,"Isha, Jade, Nina, Dana, Bryce"
+82410611,41.73539,-70.3512,3.5,https://macaulaylibrary.org/asset/82410611,10,58,,150,11,130,,K,"Isha, Jade, Nina, Dana, Bryce"
+68212851,39.0162,-84.1277,4,https://macaulaylibrary.org/asset/68212851,27,20,,95,8,95,,K,"Isha, Jade, Nina, Dana, Bryce"
+63602711,42.28317,-76.6559,3.5,https://macaulaylibrary.org/asset/63602711,9,20,,9.5,8,95,,K,"Isha, Jade, Nina, Dana, Bryce"
+63602701,42.28317,-76.6559,4.5,https://macaulaylibrary.org/asset/63602701,9,49,,120,8,95,,K,"Isha, Jade, Nina, Dana, Bryce"
+63531681,42.47283,-78.568,3,https://macaulaylibrary.org/asset/63531681,NA,NA,,NA,8,95,"No clear notes,  very faint ",K,"Isha, Jade, Nina, Dana, Bryce"
+6.29E+07,44.43496,-83.6238,3.5,https://macaulaylibrary.org/asset/62895541,23,50,,150,8,95,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.29E+07,44.43496,-83.6238,4,https://macaulaylibrary.org/asset/62895531,23,20,,215,8,95,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.25E+07,42.28317,-76.6559,4,https://macaulaylibrary.org/asset/62522901,9,18,,82,8,95,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.25E+07,42.28317,-76.6559,3.5,https://macaulaylibrary.org/asset/62502671,12,23,,112,8,95,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.24E+07,42.28317,-76.6559,3,https://macaulaylibrary.org/asset/62382421,11,20,,100,8,95,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.23E+07,37.02795,-84.3179,3,https://macaulaylibrary.org/asset/62282641,14,29,,96,8,95,,K,"Isha, Jade, Nina, Dana, Bryce"
+62211531,42.28317,-76.6559,3.5,https://macaulaylibrary.org/asset/62211531,10,20,,80,10,64,,K,"Isha, Jade, Nina, Dana, Bryce"
+62008991,42.28317,-76.6559,3,https://macaulaylibrary.org/asset/62008991,12,15,,45,10,64,,K,"Isha, Jade, Nina, Dana, Bryce"
+61855391,39.26395,-77.2758,3,https://macaulaylibrary.org/asset/61855391,NA,NA,,NA,10,64,no clear phrases or notes,K,"Isha, Jade, Nina, Dana, Bryce"
+61827261,42.28317,-76.6559,3.5,https://macaulaylibrary.org/asset/61827261,9,22,,85,10,64,,K,"Isha, Jade, Nina, Dana, Bryce"
+61672421,42.28317,-76.6559,4,https://macaulaylibrary.org/asset/61672421,12,25,,110,10,64,,K,"Isha, Jade, Nina, Dana, Bryce"
+61549171,42.28317,-76.6559,4,https://macaulaylibrary.org/asset/61549171,9,38,,85,10,64,,K,"Isha, Jade, Nina, Dana, Bryce"
+61549061,42.28317,-76.6559,4.5,https://macaulaylibrary.org/asset/61549061,11,24,,105,10,64,,K,"Isha, Jade, Nina, Dana, Bryce"
+61519891,42.28317,-76.6559,4,https://macaulaylibrary.org/asset/61519891,11,35,,105,10,64,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.15E+07,42.28317,-76.6559,4.5,https://macaulaylibrary.org/asset/61519881,11,28,,140,10,64,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.13E+07,42.71176,-73.2502,3.5,https://macaulaylibrary.org/asset/61311911,19,18,,180,10,64,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.13E+07,36.19755,-84.2295,3,https://macaulaylibrary.org/asset/61284231,14,17,,117,11,120,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.13E+07,35.9568,-83.8485,4.67,https://macaulaylibrary.org/asset/61272281,19,16,,129,11,120,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.12E+07,30.88388,-90.7126,3.5,https://macaulaylibrary.org/asset/61231861,7,14,,113,11,120,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.11E+07,43.36001,-72.3684,3.5,https://macaulaylibrary.org/asset/61141991,8,12,,53,11,120,,K,"Isha, Jade, Nina, Dana, Bryce"
+61131921,38.10532,-87.4444,3,https://macaulaylibrary.org/asset/61131921,12,14,,106,11,120,,K,"Isha, Jade, Nina, Dana, Bryce"
+60938711,45.09433,-72.091,4,https://macaulaylibrary.org/asset/60938711,15,16,,132,11,120,,K,"Isha, Jade, Nina, Dana, Bryce"
+60886961,42.24001,-72.6513,4.5,https://macaulaylibrary.org/asset/60886961,19,11,,91,11,120,,K,"Isha, Jade, Nina, Dana, Bryce"
+60869801,45.09433,-72.091,4,https://macaulaylibrary.org/asset/60869801,10,9,,123,11,120,,K,"Isha, Jade, Nina, Dana, Bryce"
+60516251,40.0826,-76.8834,3.5,https://macaulaylibrary.org/asset/60516251,6,28,,34,11,120,,K,"Isha, Jade, Nina, Dana, Bryce"
+60401071,35.7277,-82.7045,3,https://macaulaylibrary.org/asset/60401071,14,4,,126,11,120,,K,"Isha, Jade, Nina, Dana, Bryce"
+60374151,42.4667,-87.8015,3.5,https://macaulaylibrary.org/asset/60374151,17,16,,120,9,55,,K,"Isha, Jade, Nina, Dana, Bryce"
+60322471,37.15245,-75.9502,3.33,https://macaulaylibrary.org/asset/60322471,11,6,,150,9,55,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.02E+07,45.09433,-72.091,3,https://macaulaylibrary.org/asset/60164091,7,6,,138,9,55,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.02E+07,41.12496,-93.0777,4.67,https://macaulaylibrary.org/asset/60151981,11,25,,84,9,55,,K,"Isha, Jade, Nina, Dana, Bryce"
+6.00E+07,39.63807,-91.4417,3.33,https://macaulaylibrary.org/asset/59956081,7,13,,94,9,55,,K,"Isha, Jade, Nina, Dana, Bryce"
+4.19E+07,44.7074,-92.8238,3,https://macaulaylibrary.org/asset/41905021,19,18,,100,9,55,,K,"Isha, Jade, Nina, Dana, Bryce"
+3.49E+07,43.57546,-73.409,4.5,https://macaulaylibrary.org/asset/34902511,15,15,,94,9,55,,K,"Isha, Jade, Nina, Dana, Bryce"
+2.14E+05,42.42813,-76.3359,4,https://macaulaylibrary.org/asset/213680,10,9,,131,9,55,,K,"Isha, Jade, Nina, Dana, Bryce"
+139498,39.1145,-86.3978,3,https://macaulaylibrary.org/asset/139498,24,8,,148,9,55,,K,"Isha, Jade, Nina, Dana, Bryce"
+31164951,41.42196,-72.8979,3,https://macaulaylibrary.org/asset/31164951,8,13,,143,9,55,,K,"Isha, Jade, Nina, Dana, Bryce"
+532680791,39.3297166,-82.3486662,3,https://macaulaylibrary.org/asset/532680791,18,9,,162,14,154,,A,"charlie, jin, matt, theresa"
+532680731,39.3297166,-82.3486662,5,https://macaulaylibrary.org/asset/532680731,16,7,,136,14,154,,A,"charlie, jin, matt, theresa"
+532680741,39.3297166,-82.3486662,3,https://macaulaylibrary.org/asset/532680741,18,11,,156,14,154,,A,"charlie, jin, matt, theresa"
+532680721,39.3297166,-82.3486662,4,https://macaulaylibrary.org/asset/532680721,18,15,,159,14,154,,A,"charlie, jin, matt, theresa"
+532680711,39.3297166,-82.3486662,4,https://macaulaylibrary.org/asset/532680711,,9,,130,14,154,SKIP (low resolution,A,"charlie, jin, matt, theresa"
+520867961,43.647308,-70.865283,3,https://macaulaylibrary.org/asset/520867961,6,8,,120,14,NA,SKIP (too quiet),A,"charlie, jin, matt, theresa"
+511651301,38.6455061,-77.2361183,3,https://macaulaylibrary.org/asset/511651301,NA,NA,,NA,NA,NA,SKIP (too quiet),A,"charlie, jin, matt, theresa"
+510538621,41.4355842,-71.6682816,3,https://macaulaylibrary.org/asset/510538621,8,15,,132,14,154, ,A,"charlie, jin, matt, theresa"
+492010421,41.3616071,-75.0262356,3,https://macaulaylibrary.org/asset/492010421,11,10,,115,14,154,,A,"charlie, jin, matt, theresa"
+481160081,41.4355842,-71.6682816,3,https://macaulaylibrary.org/asset/481160081,11,11,,126,14,154,,A,"charlie, jin, matt, theresa"
+481158721,41.4355842,-71.6682816,3,https://macaulaylibrary.org/asset/481158721,17,10,,147,14,154,,A,"charlie, jin, matt, theresa"
+476805291,43.9559559,-89.8181339,3,https://macaulaylibrary.org/asset/476805291,10,10,,117,14,154,,A,"charlie, jin, matt, theresa"
+468074411,34.9064342,-84.3418479,3,https://macaulaylibrary.org/asset/468074411,12,5,,126,14,154,,A,"charlie, jin, matt, theresa"
+467791111,40.9955955,-72.0642866,4,https://macaulaylibrary.org/asset/467791111,,17,,135,14,154,SKIP (low resolution,A,"charlie, jin, matt, theresa"
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,, ,,,,,,,,,

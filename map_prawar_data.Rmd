@@ -5,7 +5,7 @@ date: "April 2023"
 output: html_document
 ---
 # Load libraries and read in your data file
-This code file is organized into discrete "chunks" each of which can be run by clicking its green arrow. Make sure the "prawar_class_data_2023.csv" file is in your "my_data" folder. The first chunk of code reads in the compiled class data, keeping only songs with a known location (latitude/longitude) and with a quality score of 4 or greater.
+This code file is organized into discrete "chunks" each of which can be run by clicking its green arrow. Make sure the "prawar_class_data_2023.csv" file is in your "my_data" folder. The first chunk of code reads in the compiled class song data, bins them into 2x2 latitude and longitude grid cells, and converts the units from milimeters to kHz or seconds as needed. Be sure to run this chunk of code first or the others will not run.
 ```{r}
 # load the function libraries called "dplyr", "ggplot2", and "sf"
 # note: this also installs them if they are not yet installed
@@ -29,7 +29,7 @@ library(viridis)
 
 # read in the compiled class data that you put into your "my_data" folder
   # also add map 4x4 lat/lon "grid cell" information to the data
-my_data <- read.csv("prawar_data/2023_class_data/prawar_class_data_2023.csv") %>%
+my_data <- read.csv("prawar_data/2024_class_data/prawar_class_data_2023b.csv") %>%
   mutate(lat = trunc(Latitude), lon = trunc(Longitude)) %>%
   mutate(grid_lat = case_when(lat %in% 30:33 ~ 32,
                               lat %in% 34:37 ~ 36,
@@ -48,18 +48,21 @@ my_data <- read.csv("prawar_data/2023_class_data/prawar_class_data_2023.csv") %>
                               ) %>%
   select(-lat,-lon) %>%
   select(cat_num, grid_lat, grid_lon, grid, Latitude, Longitude, quality, link, 
-         num_syllables, freq_range_mm, duration_mm, two_khz_mm, two_sec_mm, 
+         num_syllables, freq_range_mm, middle_syl_height_mm, duration_mm, two_khz_mm, two_sec_mm, 
          skip_notes, group_letter, group_members) %>%
   filter(!is.na(num_syllables),
          num_syllables != "",
          num_syllables != "n/a",
+         num_syllables != "-",
          duration_mm != "") %>%
   mutate(num_syllables = as.numeric(num_syllables),
          freq_range_mm = as.numeric(freq_range_mm),
+         middle_syl_height_mm = as.numeric(middle_syl_height_mm),
          duration_mm = as.numeric(duration_mm),
          two_khz_mm = as.numeric(two_khz_mm),
          two_sec_mm = as.numeric(two_sec_mm),
          freq_range_khz = 2*freq_range_mm/two_khz_mm,
+         middle_syl_height_khz = 2*middle_syl_height_mm/two_khz_mm,
          duration_s = 2*duration_mm/two_sec_mm,
          trill_rate = num_syllables/duration_s,
          grp = as.numeric(as.factor(group_members))) %>%
@@ -71,8 +74,9 @@ my_data <- read.csv("prawar_data/2023_class_data/prawar_class_data_2023.csv") %>
 state_bounds <- readRDS("map_data/prawar_map.rds")
 ```
 # View and explore the compiled class data
-QUESTION 5: How many rows and columns does it have?
-QUESTION 6: What is the average number of syllables? The min? The max?
+Run these lines of code one by one. Do this by putting your cursor on each line of code and hitting control (or command on Mac) + enter. Look at the output from each.
+QUESTION 4 in you questions document: How many rows and columns does it have?
+QUESTION 5: What is the average number of syllables? The min? The max?
 ```{r}
 # view a snapshot of the data
 str(my_data)
@@ -89,8 +93,8 @@ hist(my_data$duration_s)
 hist(my_data$freq_range_khz)
 hist(my_data$trill_rate) # do you see an outlier here?
 ```
-# Do you think there is a relationship between song duration and number of syllables?
-What do you think?
+# Plot song duration vs. number of syllables?
+QUESTION 6: Do you think there is a relationship between song duration and number of syllables? Explain.
 ```{r}
 
 # song duration vs. number of syllables
@@ -102,13 +106,16 @@ ggplot(aes(x = num_syllables, y = duration_s)) +
 
 ```
 
-# How about trill rate vs. number of syllables?
+# How about trill rate vs. number of syllables? Trill rate vs. Latitude?
+Run these three plots individually and examine the output.
 Notice that I removed the extremely fast trill rate (60/s) as a probably error.
+QUESTION 7: Do you think there is a relationship between trill rate and number of syllables? Explain.
+QUESTION 8: Do you think there is a relationship between trill rate and Latitude? Explain.
 ```{r}
 
 my_data %>%
   filter(trill_rate < 60) %>%
-ggplot(aes(y = trill_rate, x = num_syllables)) +
+ggplot(aes(y = trill_rate, x = num_syllables, color = Latitude)) +
   scale_color_viridis() +
   geom_point(size = 3, alpha = .5) +
   geom_smooth(method = "lm", color = "salmon") +
@@ -129,13 +136,20 @@ ggplot(aes(x = Latitude, y = num_syllables)) +
   theme_bw()
 
 ```
-# Do you think there is a relationship between number of syllables and frequency range?
-What do you think?
+# Plot number of syllables vs. frequency range
+QUESTION 9: Do you think there is a relationship between number of syllables and frequency range?
+QUESTION 10: Do you think there is a relationship between Latitude and frequency range?
 ```{r}
 
 # number of syllables vs. frequency range
 my_data %>%
 ggplot(aes(x = num_syllables, y = freq_range_khz)) +
+  geom_point() +
+  geom_smooth(method = "lm", color = "salmon") +
+  theme_bw()
+
+my_data %>%
+ggplot(aes(x = Latitude, y = freq_range_khz)) +
   geom_point() +
   geom_smooth(method = "lm", color = "salmon") +
   theme_bw()
@@ -173,6 +187,7 @@ sum_data <- my_data %>%
   group_by(grid, grid_lat, grid_lon) %>%
   summarize(num_syllables = mean(num_syllables),
             freq_range_khz = mean(freq_range_khz),
+            middle_syl_height_khz = mean(middle_syl_height_khz),
             duration_s = mean(duration_s),
             trill_rate = mean(trill_rate),
             n = length(grid_lat),
@@ -181,7 +196,7 @@ sum_data <- my_data %>%
 View(sum_data)
 ```
 # Look at the averaged grid cell data in terms of song trait pairs & lattitude
-This can help us see geographic clusters. Do you see any?
+This can help us see geographic clusters. QUESTION 11: Do you see any?
 ```{r}
 sum_data %>%
   ggplot() +
@@ -193,7 +208,8 @@ sum_data %>%
 ```
 
 # Make map of the mean syllables per song
-QUESTION 7: Do you see any patterns in mean number of syllables?
+Make and save Figure 1.
+QUESTION 12: Do you see any patterns in mean number of syllables?
 ```{r}
 sum_data %>%
    filter(n >= 3) %>%
@@ -214,7 +230,8 @@ ggsave("my_output/Fig1_mean_num_syllables.png",
        height = 5, width = 5, dpi = 400)
 ```
 # Make map of the mean frequency range per song
-QUESTION 8: Do you see any patterns in mean frequency range?
+Make and save Figure 2.
+QUESTION 13: Do you see any patterns in mean frequency range?
 ```{r}
 sum_data %>%
   filter(n >= 3) %>%
@@ -234,10 +251,11 @@ ggsave("my_output/Fig2_mean_freq_range_khz.png",
        height = 5, width = 5, dpi = 400)
 ```
 # Make map of the mean song duration
-QUESTION 10: Do you see any patterns in mean song duration?
+Make and save Figure 3.
+QUESTION 14: Do you see any patterns in mean song duration?
 ```{r}
 sum_data %>%
-  # filter(n >= 3) %>%
+  filter(n >= 3) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           size = .25) +
@@ -249,28 +267,32 @@ sum_data %>%
   labs(x = "", y = "", fill = "Mean\nduration\n(s)",
        title = "Song duration")
 
-ggsave("my_output/Fig3_mean_song_duration_s.png", 
+ggsave("prawar_data/2024_class_output/Fig3_mean_song_duration_s.png", 
        height = 5, width = 5, dpi = 400)
 ```
-# Challenge: make a map of the mean trill rate (syllables / second)
-Copy / paste and modify the code in the previous chunk to make the 4th "challenge" map. Save this as Fig. 4. Do you see any patterns in mean trill rate?
+# Challenge: make a map of the mean trill rate (syllables / second) and middle syllable height (kHz)
+Modify the code below (copied from the previous chunk) to make the 4th and 5th "challenge" maps. Save these as Fig. 4 and 5. 
+QUESTION 15: Do you see any patterns in mean trill rate or middle syllable height?
 ```{r}
 
 sum_data %>%
-  # filter(n >= 3) %>%
+  #filter(n >= 3) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           size = .25) +
-  geom_tile(aes(x = grid_lon, y = grid_lat, fill = trill_rate), 
+  geom_tile(aes(x = grid_lon, y = grid_lat, fill = duration_s), 
                  size = 1) +
   scale_fill_viridis(option = "inferno") +
   theme_bw() + 
   theme(text = element_text(size = 14)) +
-  labs(x = "", y = "", fill = "Mean\nrate\n(#/s)",
-       title = "Trill rate")
+  labs(x = "", y = "", fill = "Mean\nduration\n(s)",
+       title = "Song duration")
 
-ggsave("my_output/Fig4_mean_trill_rate.png", 
+ggsave("prawar_data/2024_class_output/Fig4_mean_trill_rate.png", 
+       height = 5, width = 5, dpi = 400)
+
+ggsave("prawar_data/2024_class_output/Fig5_mean_middle_syl_height_kHz.png", 
        height = 5, width = 5, dpi = 400)
 ```
 
-Go back to the "Mapping Warblers" GitHub page to finish up Phase 3. 
+Go back to the README.md file on the "Mapping Warblers" GitHub page to finish up Phase 3. https://github.com/mikeallen-eco/mapping_warblers/blob/main/README.md
