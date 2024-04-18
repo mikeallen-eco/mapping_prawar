@@ -29,14 +29,16 @@ library(viridis)
 
 # read in the compiled class data that you put into your "my_data" folder
   # also add map 4x4 lat/lon "grid cell" information to the data
-my_data <- read.csv("prawar_data/2024_class_data/prawar_class_data_2023b.csv") %>%
+my_data_raw <- read.csv("prawar_data/2024_class_data/prawar_class_data_2023_2024.csv") %>%
   mutate(lat = trunc(Latitude), lon = trunc(Longitude)) %>%
-  mutate(grid_lat = case_when(lat %in% 30:33 ~ 32,
+  mutate(grid_lat = case_when(lat %in% 26:29 ~ 28,
+                              lat %in% 30:33 ~ 32,
                               lat %in% 34:37 ~ 36,
                               lat %in% 38:41 ~ 40,
                               lat %in% 42:45 ~ 44,
                               lat %in% 46:49 ~ 48),
-         grid_lon = case_when(lon %in% -66:-69 ~ -68,
+         grid_lon = case_when(lon %in% -62:-65 ~ -64,
+                              lon %in% -66:-69 ~ -68,
                               lon %in% -70:-73 ~ -72,
                               lon %in% -74:-77 ~ -76,
                               lon %in% -78:-81 ~ -80,
@@ -54,6 +56,8 @@ my_data <- read.csv("prawar_data/2024_class_data/prawar_class_data_2023b.csv") %
          num_syllables != "",
          num_syllables != "n/a",
          num_syllables != "-",
+         num_syllables != "skip",
+         num_syllables != "Skip",
          duration_mm != "") %>%
   mutate(num_syllables = as.numeric(num_syllables),
          freq_range_mm = as.numeric(freq_range_mm),
@@ -65,10 +69,47 @@ my_data <- read.csv("prawar_data/2024_class_data/prawar_class_data_2023b.csv") %
          middle_syl_height_khz = 2*middle_syl_height_mm/two_khz_mm,
          duration_s = 2*duration_mm/two_sec_mm,
          trill_rate = num_syllables/duration_s,
-         grp = as.numeric(as.factor(group_members))) %>%
-  filter(duration_s < 10,
+         grp = as.numeric(as.factor(group_members)))
+
+# this step filters out highly unusual values that were likely data collection or entry errors
+  # we also average values for songs that were measured more than once
+my_data_tmp <- my_data_raw %>%
+  filter(duration_s < 5,
          freq_range_khz < 10,
-         trill_rate < 30)
+         trill_rate < 20) %>%
+  mutate(dup = 1*duplicated(cat_num)) %>%
+  group_by(cat_num, grid_lat, grid_lon, grid, Latitude, Longitude, link) %>%
+  summarize(n_meas = length(num_syllables),
+            num_syllables_cv = sd(num_syllables)/mean(num_syllables),
+         freq_range_khz_cv = sd(freq_range_khz)/mean(freq_range_khz),
+         middle_syl_height_khz_cv = sd(middle_syl_height_khz, na.rm = T)/mean(middle_syl_height_khz, na.rm = T),
+         duration_s_cv = sd(duration_s)/mean(duration_s),
+         trill_rate_cv = sd(trill_rate)/mean(trill_rate),
+         num_syllables = mean(num_syllables),
+         freq_range_khz = mean(freq_range_khz),
+         middle_syl_height_khz = mean(middle_syl_height_khz, na.rm = T),
+         duration_s = mean(duration_s),
+         trill_rate = mean(trill_rate),
+         .groups = "drop")
+
+# this puts the highly unusual values into a separate database to check on
+data_to_check <- my_data_raw %>%
+  filter(duration_s >= 5 |
+         freq_range_khz >= 10 |
+         trill_rate >= 20)
+
+# final data file
+my_data <- my_data_tmp %>%
+  mutate(cv_flag = case_when(num_syllables_cv > 0.33 |
+           freq_range_khz_cv > 0.33 |
+           middle_syl_height_khz_cv > 0.33 |
+           duration_s_cv > 0.33 |
+           trill_rate_cv > 0.33 ~ 1,
+           TRUE ~ 0)) %>%
+  select(cat_num:link, num_syllables:trill_rate, n_meas, cv_flag)
+
+# remove raw data
+rm(my_data_tmp)
 
 # load the map of North America
 state_bounds <- readRDS("map_data/prawar_map.rds")
@@ -87,14 +128,15 @@ View(my_data)
 # view the mean and quantiles of the syllable number data
 summary(my_data$num_syllables)
 
-# make a histogram of the syllable number data - a lot of variation!
+# make a histogram of the syllable numbers and other data - a lot of variation!
+# check against the values we excluded above - do you see how they would be extreme outliers?
 hist(my_data$num_syllables)
 hist(my_data$duration_s)
 hist(my_data$freq_range_khz)
-hist(my_data$trill_rate) # do you see an outlier here?
+hist(my_data$trill_rate) 
 ```
 # Plot song duration vs. number of syllables?
-QUESTION 6: Do you think there is a relationship between song duration and number of syllables? Explain.
+QUESTION 6: Do you think there is a relationship between song duration and number of syllables? Explain. If no, or if it is not a very strong relationship, what does this imply?
 ```{r}
 
 # song duration vs. number of syllables
@@ -114,23 +156,36 @@ QUESTION 8: Do you think there is a relationship between trill rate and Latitude
 ```{r}
 
 my_data %>%
-  filter(trill_rate < 60) %>%
-ggplot(aes(y = trill_rate, x = num_syllables, color = Latitude)) +
+  # filter(cv_flag == 0,
+  #        n_meas > 1) %>%
+  # filter(duration_s < 3) %>%
+  # filter(num_syllables > 4) %>%
+  ggplot(aes(y = trill_rate, x = num_syllables, color = Latitude)) +
   scale_color_viridis() +
   geom_point(size = 3, alpha = .5) +
   geom_smooth(method = "lm", color = "salmon") +
   theme_bw()
 
 my_data %>%
-  filter(trill_rate < 60) %>%
+  # filter(cv_flag == 0,
+  #        n_meas > 1) %>%
 ggplot(aes(x = Latitude, y = trill_rate)) +
   scale_color_viridis() +
   geom_point(size = 3, alpha = .5) +
   theme_bw()
 
 my_data %>%
-  filter(trill_rate < 60) %>%
-ggplot(aes(x = Latitude, y = num_syllables)) +
+  # filter(cv_flag == 0,
+  #        n_meas > 1) %>%
+  ggplot(aes(x = Latitude, y = num_syllables)) +
+  scale_color_viridis() +
+  geom_point(size = 3, alpha = .5) +
+  theme_bw()
+
+my_data %>%
+  # filter(cv_flag == 0,
+  #        n_meas > 1) %>%
+ggplot(aes(x = Latitude, y = duration_s)) +
   scale_color_viridis() +
   geom_point(size = 3, alpha = .5) +
   theme_bw()
@@ -158,32 +213,32 @@ ggplot(aes(x = Latitude, y = freq_range_khz)) +
 
 # Let's do some QC  plotting 
 to see if might have been systematic measuring errors by group
+Note: these data are from before we filtered out "unreasonable" values
 ```{r}
 
-my_data %>%
+my_data_raw %>%
   ggplot(aes(x = as.factor(grp), y = duration_s)) +
   geom_boxplot()
 
-my_data %>%
+my_data_raw %>%
   ggplot(aes(x = as.factor(grp), y = freq_range_khz)) +
   geom_boxplot()
 
-my_data %>%
+my_data_raw %>%
   ggplot(aes(x = as.factor(grp), y = num_syllables)) +
   geom_boxplot()
 
-my_data %>%
+my_data_raw %>%
+  # filter(grp != 13) %>%
   ggplot(aes(x = as.factor(grp), y = trill_rate)) +
   geom_boxplot()
 
 ```
 
 # Summarize the data by grid cell
-Notice that I filter out a data point with an extremely high trill rate
 ```{r}
 # summaize data by grid cell
 sum_data <- my_data %>%
-  filter(trill_rate < 60) %>%
   group_by(grid, grid_lat, grid_lon) %>%
   summarize(num_syllables = mean(num_syllables),
             freq_range_khz = mean(freq_range_khz),
@@ -276,7 +331,7 @@ QUESTION 15: Do you see any patterns in mean trill rate or middle syllable heigh
 ```{r}
 
 sum_data %>%
-  #filter(n >= 3) %>%
+  filter(n >= 3) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           size = .25) +
