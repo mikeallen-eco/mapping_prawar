@@ -37,7 +37,8 @@ my_data_raw <- read.csv("prawar_data/2024_class_data/prawar_class_data_2023_2024
                                                    pattern = "https://macaulaylibrary.org/asset/", replacement = "")),
                              TRUE ~ cat_num)) %>%
   mutate(lat = trunc(Latitude), lon = trunc(Longitude)) %>%
-  mutate(grid_lat = case_when(lat %in% 26:29 ~ 28,
+  mutate(grid_lat = case_when(lat %in% 22:25 ~ 24,
+                              lat %in% 26:29 ~ 28,
                               lat %in% 30:33 ~ 32,
                               lat %in% 34:37 ~ 36,
                               lat %in% 38:41 ~ 40,
@@ -65,6 +66,7 @@ my_data_raw <- read.csv("prawar_data/2024_class_data/prawar_class_data_2023_2024
          num_syllables != "skip",
          num_syllables != "Skip",
          num_syllables != "N/A",
+         num_syllables != "Na",
          duration_mm != "") %>%
   mutate(num_syllables = as.numeric(num_syllables),
          freq_range_mm = as.numeric(freq_range_mm),
@@ -81,9 +83,10 @@ my_data_raw <- read.csv("prawar_data/2024_class_data/prawar_class_data_2023_2024
 # this step filters out highly unusual values that were likely data collection or entry errors
   # we also average values for songs that were measured more than once
 my_data_tmp <- my_data_raw %>%
-  filter(duration_s < 5,
-         freq_range_khz < 10,
-         trill_rate < 20) %>%
+  filter(duration_s < 3,
+         freq_range_khz < 5,
+         trill_rate < 20,
+         trill_rate >= 3) %>%
   mutate(dup = 1*duplicated(cat_num)) %>%
   group_by(cat_num, grid_lat, grid_lon, grid, Latitude, Longitude, link) %>%
   summarize(n_meas = length(num_syllables),
@@ -101,9 +104,10 @@ my_data_tmp <- my_data_raw %>%
 
 # this puts the highly unusual values into a separate database to check on
 data_to_check <- my_data_raw %>%
-  filter(duration_s >= 6 |
-         freq_range_khz >= 10 |
-         trill_rate >= 20,
+  filter(duration_s >= 3 |
+         freq_range_khz >= 5 |
+         trill_rate >= 20 |
+         trill_rate < 3,
          year == 2024)
 
 # final data file
@@ -171,8 +175,6 @@ QUESTION 8: Do you think there is a relationship between trill rate and Latitude
 my_data %>%
   # filter(cv_flag == 0, # remove # from the start of this line for question 7A
   #        n_meas > 1) %>% # remove # from the start of this line for question 7A
-  # filter(duration_s < 3) %>%
-  # filter(num_syllables > 4) %>%
   ggplot(aes(y = trill_rate, x = num_syllables, color = Latitude)) +
   scale_color_viridis() +
   geom_point(size = 3, alpha = .5) +
@@ -301,6 +303,7 @@ sum_data %>%
   ggplot() +
   geom_point(aes(x = num_syllables, y = trill_rate, 
                  color = grid_lat), size = 4) +
+  geom_smooth(aes(x = num_syllables, y = trill_rate), method = "lm", color = "black") +
   scale_color_viridis() +
   theme_bw()
 
