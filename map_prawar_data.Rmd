@@ -30,6 +30,12 @@ library(viridis)
 # read in the compiled class data that you put into your "my_data" folder
   # also add map 4x4 lat/lon "grid cell" information to the data
 my_data_raw <- read.csv("prawar_data/2024_class_data/prawar_class_data_2023_2024.csv") %>%
+  # filter(year == 2024) %>%
+  # this part fixes places where cat_num got rounded
+  mutate(cat_num = as.numeric(cat_num),
+         cat_num = case_when(is.na(cat_num) ~ as.numeric(gsub(link, 
+                                                   pattern = "https://macaulaylibrary.org/asset/", replacement = "")),
+                             TRUE ~ cat_num)) %>%
   mutate(lat = trunc(Latitude), lon = trunc(Longitude)) %>%
   mutate(grid_lat = case_when(lat %in% 26:29 ~ 28,
                               lat %in% 30:33 ~ 32,
@@ -51,13 +57,14 @@ my_data_raw <- read.csv("prawar_data/2024_class_data/prawar_class_data_2023_2024
   select(-lat,-lon) %>%
   select(cat_num, grid_lat, grid_lon, grid, Latitude, Longitude, quality, link, 
          num_syllables, freq_range_mm, middle_syl_height_mm, duration_mm, two_khz_mm, two_sec_mm, 
-         skip_notes, group_letter, group_members) %>%
+         skip_notes, group_letter, group_members, year) %>%
   filter(!is.na(num_syllables),
          num_syllables != "",
          num_syllables != "n/a",
          num_syllables != "-",
          num_syllables != "skip",
          num_syllables != "Skip",
+         num_syllables != "N/A",
          duration_mm != "") %>%
   mutate(num_syllables = as.numeric(num_syllables),
          freq_range_mm = as.numeric(freq_range_mm),
@@ -94,9 +101,10 @@ my_data_tmp <- my_data_raw %>%
 
 # this puts the highly unusual values into a separate database to check on
 data_to_check <- my_data_raw %>%
-  filter(duration_s >= 5 |
+  filter(duration_s >= 6 |
          freq_range_khz >= 10 |
-         trill_rate >= 20)
+         trill_rate >= 20,
+         year == 2024)
 
 # final data file
 my_data <- my_data_tmp %>%
@@ -217,20 +225,48 @@ Note: these data are from before we filtered out "unreasonable" values
 ```{r}
 
 my_data_raw %>%
-  ggplot(aes(x = as.factor(grp), y = duration_s)) +
+  ggplot(aes(x = as.factor(group_letter), y = duration_mm)) +
+  facet_wrap(~year) +
   geom_boxplot()
 
 my_data_raw %>%
-  ggplot(aes(x = as.factor(grp), y = freq_range_khz)) +
+  ggplot(aes(x = as.factor(group_letter), y = two_sec_mm)) +
+  facet_wrap(~year) +
   geom_boxplot()
 
 my_data_raw %>%
-  ggplot(aes(x = as.factor(grp), y = num_syllables)) +
+  ggplot(aes(x = as.factor(group_letter), y = freq_range_mm)) +
+  facet_wrap(~year) +
   geom_boxplot()
 
 my_data_raw %>%
-  # filter(grp != 13) %>%
-  ggplot(aes(x = as.factor(grp), y = trill_rate)) +
+  ggplot(aes(x = as.factor(group_letter), y = two_khz_mm)) +
+  facet_wrap(~year) +
+  geom_boxplot()
+
+my_data_raw %>%
+  ggplot(aes(x = as.factor(group_letter), y = num_syllables)) +
+  facet_wrap(~year) +
+  geom_boxplot()
+
+my_data_raw %>%
+  ggplot(aes(x = as.factor(group_letter), y = trill_rate)) +
+  facet_wrap(~year) +
+  geom_boxplot()
+
+my_data_raw %>%
+  ggplot(aes(x = as.factor(group_letter), y = duration_s)) +
+  facet_wrap(~year) +
+  geom_boxplot()
+
+my_data_raw %>%
+  ggplot(aes(x = as.factor(group_letter), y = freq_range_khz)) +
+  facet_wrap(~year) +
+  geom_boxplot()
+
+my_data_raw %>%
+  ggplot(aes(x = as.factor(group_letter), y = middle_syl_height_khz)) +
+  facet_wrap(~year) +
   geom_boxplot()
 
 ```
@@ -242,7 +278,7 @@ sum_data <- my_data %>%
   group_by(grid, grid_lat, grid_lon) %>%
   summarize(num_syllables = mean(num_syllables),
             freq_range_khz = mean(freq_range_khz),
-            middle_syl_height_khz = mean(middle_syl_height_khz),
+            middle_syl_height_khz = mean(middle_syl_height_khz, na.rm = T),
             duration_s = mean(duration_s),
             trill_rate = mean(trill_rate),
             n = length(grid_lat),
@@ -267,7 +303,7 @@ Make and save Figure 1.
 QUESTION 12: Do you see any patterns in mean number of syllables?
 ```{r}
 sum_data %>%
-   filter(n >= 3) %>%
+   filter(n >= 2) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           linewidth = .25) +
@@ -281,7 +317,7 @@ sum_data %>%
        title = "Number of syllables") +
   geom_point(aes(x = Longitude, y = Latitude), data = my_data, shape = "+", color = "gray")
 
-ggsave("my_output/Fig1_mean_num_syllables.png", 
+ggsave("prawar_data/2024_class_output/Fig1_mean_num_syllables.png", 
        height = 5, width = 5, dpi = 400)
 ```
 # Make map of the mean frequency range per song
@@ -289,7 +325,7 @@ Make and save Figure 2.
 QUESTION 13: Do you see any patterns in mean frequency range?
 ```{r}
 sum_data %>%
-  filter(n >= 3) %>%
+  filter(n >= 2) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           size = .25) +
@@ -302,7 +338,7 @@ sum_data %>%
        title = "Frequency range") +
   geom_point(aes(x = Longitude, y = Latitude), data = my_data, shape = "+", color = "gray")
 
-ggsave("my_output/Fig2_mean_freq_range_khz.png", 
+ggsave("prawar_data/2024_class_output/Fig2_mean_freq_range_khz.png", 
        height = 5, width = 5, dpi = 400)
 ```
 # Make map of the mean song duration
@@ -310,7 +346,7 @@ Make and save Figure 3.
 QUESTION 14: Do you see any patterns in mean song duration?
 ```{r}
 sum_data %>%
-  filter(n >= 3) %>%
+  filter(n >= 2) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           size = .25) +
@@ -326,12 +362,12 @@ ggsave("prawar_data/2024_class_output/Fig3_mean_song_duration_s.png",
        height = 5, width = 5, dpi = 400)
 ```
 # Challenge: make a map of the mean trill rate (syllables / second) and middle syllable height (kHz)
-Modify the code below (copied from the previous chunk) to make the 4th and 5th "challenge" maps. Save these as Fig. 4 and 5. 
+Modify the code below (copied from the previous chunk) to make the 4th and 5th "challenge" maps. Save these as Fig. 4 and 5. Hint: you'll be changing places that it says "duration_s" to the variable name you want it to be. (And also where the labels indicate duration.)
 QUESTION 15: Do you see any patterns in mean trill rate or middle syllable height?
 ```{r}
 
 sum_data %>%
-  filter(n >= 3) %>%
+  filter(n >= 2) %>%
     ggplot() +
   geom_sf(data = state_bounds, aes(), color = "gray",
           size = .25) +
