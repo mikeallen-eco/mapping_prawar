@@ -108,11 +108,11 @@ data_to_check <- my_data_raw %>%
 
 # final data file
 my_data <- my_data_tmp %>%
-  mutate(cv_flag = case_when(num_syllables_cv > 0.33 |
-           freq_range_khz_cv > 0.33 |
-           middle_syl_height_khz_cv > 0.33 |
-           duration_s_cv > 0.33 |
-           trill_rate_cv > 0.33 ~ 1,
+  mutate(cv_flag = case_when(num_syllables_cv > 0.5 |
+           freq_range_khz_cv > 0.5 |
+           middle_syl_height_khz_cv > 0.5 |
+           duration_s_cv > 0.5 |
+           trill_rate_cv > 0.5 ~ 1,
            TRUE ~ 0)) %>%
   select(cat_num:link, num_syllables:trill_rate, n_meas, cv_flag)
 
@@ -149,6 +149,8 @@ QUESTION 6: Do you think there is a relationship between song duration and numbe
 
 # song duration vs. number of syllables
 my_data %>%
+  # filter(cv_flag == 0) %>% 
+  # you can remove the # from the previous line and rerun to see how uncertain measurements are affecting things
 ggplot(aes(x = num_syllables, y = duration_s)) +
   geom_point() +
   geom_smooth(method = "lm", color = "salmon") +
@@ -160,12 +162,15 @@ ggplot(aes(x = num_syllables, y = duration_s)) +
 Run these three plots individually and examine the output.
 Notice that I removed the extremely fast trill rate (60/s) as a probably error.
 QUESTION 7: Do you think there is a relationship between trill rate and number of syllables? Explain.
+QUESTION 7A: does it change if you remove all uncertain measurements? 
+  (uncertain measurements are those only measured 1x or measured >1 with high variability.)
+  (hint: remove the # from selected lines below and re-run to answer this question)
 QUESTION 8: Do you think there is a relationship between trill rate and Latitude? Explain.
 ```{r}
 
 my_data %>%
-  # filter(cv_flag == 0,
-  #        n_meas > 1) %>%
+  # filter(cv_flag == 0, # remove # from the start of this line for question 7A
+  #        n_meas > 1) %>% # remove # from the start of this line for question 7A
   # filter(duration_s < 3) %>%
   # filter(num_syllables > 4) %>%
   ggplot(aes(y = trill_rate, x = num_syllables, color = Latitude)) +
@@ -220,8 +225,9 @@ ggplot(aes(x = Latitude, y = freq_range_khz)) +
 ```
 
 # Let's do some QC  plotting 
-to see if might have been systematic measuring errors by group
-Note: these data are from before we filtered out "unreasonable" values
+to see if there might have been systematic measuring errors by group
+Note: these data are from before we filtered out "unreasonable" values and averaged by catalogue number
+QUESTION 10A: Describe some of the unusual observations you see in the plots below. Refer back to some sonograms of Prairie Warbler songs to explain why they are unusual.
 ```{r}
 
 my_data_raw %>%
@@ -272,6 +278,7 @@ my_data_raw %>%
 ```
 
 # Summarize the data by grid cell
+View the data after we average all data within each 4 degree latitude x 4 degree longitude grid cell.
 ```{r}
 # summaize data by grid cell
 sum_data <- my_data %>%
@@ -287,7 +294,8 @@ sum_data <- my_data %>%
 View(sum_data)
 ```
 # Look at the averaged grid cell data in terms of song trait pairs & lattitude
-This can help us see geographic clusters. QUESTION 11: Do you see any?
+This can help us see geographic clusters. 
+QUESTION 11: Do you see any geographic patterns in trill rate based on this plot?
 ```{r}
 sum_data %>%
   ggplot() +
